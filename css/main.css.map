@@ -1,0 +1,17 @@
+{
+    "version": 3,
+    "mappings": ";AAAA;;;GAGG;ACHH,AAAA,KAAK,CAAC;EACF,iBAAiB,CAAA;;AAAC;CAErB;;AACD,AAAA,KAAK,CAAC;EACF,eAAe,EAAE,IAAI;EACrB,KAAK,EAAE,OAAO;CAOjB;;AATD,AAIA,KAJK,AAIJ,MAAM,EAJP,KAAK,AAKJ,MAAM,CAAC;EACJ,KAAK,EAAE,mBAAmB;CAC7B;;AAID,AAAA,KAAK,CAAC;EACF,UAAU,EAAE,CAAC;EACb,aAAa,EAAE,CAAC;EAChB,YAAY,EAAE,CAAC;EACf,UAAU,EAAE,IAAI;CACnB;;AAED,AAAA,OAAO,CAAC;EACJ,GAAG,EAAE,CAAC;EACN,IAAI,EAAE,CAAC;EACP,KAAK,EAAE,IAAI;EACX,WAAW,EAAE,IAAI;EACjB,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,MAAM;EACnB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,IAAI;CACpB;;AACD,AAAA,KAAK,CAAC;EACF,OAAO,EAAE,WAAW;CACvB;;AACD,AAAA,WAAW,AAAA,IAAK,CAAA,WAAW,EAAE;EACzB,YAAY,EAAE,IAAI;CACrB;;AACD,AAAA,KAAK,CAAC;EACF,OAAO,EAAE,KAAK;CACjB",
+    "sources": [
+        "../src/sass/main.scss",
+        "../src/sass/_header.scss",
+        "../src/sass/_menu.scss",
+        "../src/sass/_about-us.scss",
+        "../src/sass/_program.scss",
+        "../src/sass/_reviews.scss",
+        "../src/sass/_registration.scss",
+        "../src/sass/_contact.scss",
+        "../src/sass/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

@@ -1,0 +1,44 @@
+:root {
+    --main-text-color: rgba(46, 37, 32, 1)
+--accent-color: rgba(135, 102, 85, 1)
+}
+.link {
+    text-decoration: none;
+    color: inherit;
+
+&:hover,
+&:focus {
+    color: var(--accent-color);
+}
+    
+}
+
+.list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 52px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.22;
+}
+.menu {
+    display: inline-flex;
+}
+.menu__item:not(:last-child) {
+    margin-right: 20px;
+}
+.logo {
+    display: block;
+}
+// .header__logo {
+
+// }

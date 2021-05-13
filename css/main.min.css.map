@@ -1,0 +1,17 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,KAAK,AAAC,CACF,iBAAiB,CAAA;;AAAC,CAErB,AACD,AAAA,KAAK,AAAC,CACF,eAAe,CAAE,IAAI,CACrB,KAAK,CAAE,OAAO,CAOjB,AATD,AAIA,KAJK,AAIJ,MAAM,CAJP,KAAK,AAKJ,MAAM,AAAC,CACJ,KAAK,CAAE,mBAAmB,CAC7B,AAID,AAAA,KAAK,AAAC,CACF,UAAU,CAAE,CAAC,CACb,aAAa,CAAE,CAAC,CAChB,YAAY,CAAE,CAAC,CACf,UAAU,CAAE,IAAI,CACnB,AAED,AAAA,OAAO,AAAC,CACJ,GAAG,CAAE,CAAC,CACN,IAAI,CAAE,CAAC,CACP,KAAK,CAAE,IAAI,CACX,WAAW,CAAE,IAAI,CACjB,UAAU,CAAE,MAAM,CAClB,WAAW,CAAE,MAAM,CACnB,SAAS,CAAE,IAAI,CACf,WAAW,CAAE,IAAI,CACpB,AACD,AAAA,KAAK,AAAC,CACF,OAAO,CAAE,WAAW,CACvB,AACD,AAAA,WAAW,AAAA,IAAK,CAAA,WAAW,CAAE,CACzB,YAAY,CAAE,IAAI,CACrB,AACD,AAAA,KAAK,AAAC,CACF,OAAO,CAAE,KAAK,CACjB",
+    "sources": [
+        "../src/sass/main.scss",
+        "../src/sass/_header.scss",
+        "../src/sass/_menu.scss",
+        "../src/sass/_about-us.scss",
+        "../src/sass/_program.scss",
+        "../src/sass/_reviews.scss",
+        "../src/sass/_registration.scss",
+        "../src/sass/_contact.scss",
+        "../src/sass/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.min.css"
+}
