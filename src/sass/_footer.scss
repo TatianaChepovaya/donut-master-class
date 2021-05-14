@@ -1,0 +1,17 @@
+ul {
+  list-style: none;
+}
+
+.footer-form__input {
+  border: none;
+  border-bottom: 1px solid #ab816c;
+  display: block;
+}
+
+.footer-form__field {
+  display: block;
+  margin-bottom: 25px;
+  &:nth-child(2) {
+    margin-bottom: 37px;
+  }
+}
