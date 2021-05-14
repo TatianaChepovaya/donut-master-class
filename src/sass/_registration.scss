@@ -4,13 +4,20 @@
 }
 
 .registration-form {
-  padding: 40px 15px;
-  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+  padding: 15px 15px 35px 15px;
+  box-shadow: -4px -4px 4px var(--ph-color), 4px 4px 4px var(--ph-color);
   border-radius: 150px 150px 0px 0px;
   background-color: var(--registration-form-bgc);
 
+  &__title {
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+
   &__info {
-    border-bottom: 1px solid rgba(171, 129, 108, 0.5);
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--ph-color);
   }
 
   &__time {
@@ -21,6 +28,7 @@
   }
 
   &__place {
+    margin-bottom: 25px;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
@@ -35,6 +43,7 @@
   }
 
   &__descr {
+    margin-bottom: 10px;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -42,7 +51,17 @@
   }
 
   &__input {
+    margin-bottom: 25px;
     width: 100%;
-    border: none;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid var(--secondary-color);
+  }
+
+  &__input::placeholder {
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--ph-color);
   }
 }
