@@ -4,6 +4,7 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
+@import './base/_common.scss';
 @import './header';
 @import './menu';
 @import './about-us';
@@ -12,4 +13,3 @@
 @import './registration';
 @import './contact';
 @import './footer';
-
