@@ -1,0 +1,13 @@
+.socials {
+  display: flex;
+}
+
+
+.socials__link {
+  padding: 5px;
+  &:focus,
+  &:hover {
+    fill: #876655;
+  }
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
