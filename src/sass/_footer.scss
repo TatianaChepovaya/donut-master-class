@@ -1,0 +1,33 @@
+.footer__contacts {
+  display: flex;
+  justify-content: space-between;
+}
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer__link {
+  display: block;
+  &:hover,
+  &:focus {
+    color: var(--hover-focus-color);
+  }
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.footer__icon {
+  fill: currentColor;
+  &:hover,
+  &:focus {
+    fill: var(--hover-focus-color);
+  }
+}
+.location {
+  z-index: 20;
+}
