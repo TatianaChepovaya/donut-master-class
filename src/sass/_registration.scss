@@ -4,59 +4,45 @@
 }
 
 .registration-form {
+  padding: 40px 15px;
   box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
   border-radius: 150px 150px 0px 0px;
-
-  &__title {
-    font-family: Caveat Brush;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 65px;
-    color: black;
-  }
+  background-color: var(--registration-form-bgc);
 
   &__info {
     border-bottom: 1px solid rgba(171, 129, 108, 0.5);
   }
 
   &__time {
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
-    color: black;
+    color: var(--text-color);
   }
 
   &__place {
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
-    color: black;
+    color: var(--text-color);
   }
 
   &__cost {
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
-    color: black;
+    color: var(--text-color);
   }
 
   &__descr {
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    color: black;
+    color: var(--text-color);
   }
 
   &__input {
     width: 100%;
+    border: none;
   }
 }
