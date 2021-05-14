@@ -1,0 +1,193 @@
+.reviews {
+    @media screen and (max-width: 767px) {
+      text-align: center;
+      padding-top: 25px;
+    }
+    // temp --------------------------------------
+    // img {
+    //     display: inline-block;
+    // }
+  
+    &__title {
+    //   font-family: Caveat Brush;
+    //   font-style: normal;
+    //   font-weight: 400;
+    //   font-size: 24px;
+    //   line-height: 2.7;
+    //   color: #2e2520;
+  
+      @media screen and (max-width: 767px) {
+        margin-bottom: 0;
+      }
+  
+      @media screen and (min-width: 1280px) {
+        font-size: 36px;
+        line-height: 1.8;
+      }
+    }
+    // ------------------------------------------
+    
+  
+     &__frame {
+    //   @media screen and (max-width: 767px) {
+    //     width: 110px;
+    //     height: 110px;
+    //     display: inline-block;
+    //   }
+  
+      // @media screen and ((min-width: 767px) and (max-width: 767px)) {
+      // }
+  
+      margin-bottom: 6px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  
+    &__rate {
+      display: flex;
+      justify-content: center;
+    }
+  
+    &__name {
+      font-style: italic;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 2;
+      margin-bottom: 2px;
+      
+      @media screen and (min-width: 1280px) {
+        font-size: 16px;
+        line-height: 4.06;
+      }
+    }
+  
+    &__article {
+      max-width: 626px;
+      display: inline-flex;
+      justify-content: center;
+      P {
+        margin-bottom: 15px;
+      }
+    }
+  
+    &__pagination {
+      display: inline-flex;
+      justify-content: center;
+      
+    }
+  }
+  
+  .rate__icon {
+    fill: #ab816c;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .slider__previous,
+    .slider__next {
+      display: none;
+    }
+  }
+  
+  .pagination__button {
+    border: none;
+    padding: 15px;
+  }
+  
+  .button-line {
+    width: 35px;
+    height: 1px;
+    border:  1px solid #ab816c;
+    margin-bottom: 0;
+  
+  }
+  
+  .pagination__count {
+    padding: 10px 0;
+    margin-bottom: 0;
+  }
+    
+  @media screen and (max-width: 767px) {
+    .slider__current .reviews__frame {
+      width: 110px;
+      height: 110px;
+      height: 110px;
+      display: inline-block;
+      background-image: url('../images/desktop/photo-will-desktop.jpg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    } 
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    .slider__current .reviews__frame {
+      width: 186px;
+      height: 186px;
+      background-image: url('../images/desktop/photo-will-desktop.jpg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  
+    .slider__previous .reviews__frame {
+      width: 110px;
+      height: 110px;
+      background-image: url('../images/desktop/photo-john-desktop.jpg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    
+  
+    .slider__next .reviews__frame {
+      width: 110px;
+      height: 110px;
+      background-image: url('../images/desktop/photo-elisabeth-desktop.jpg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    
+  }
+  
+  @media screen and (min-width: 1279px) {
+    .slider__current .reviews__frame {
+      width: 234px;
+      height: 234px;
+      background-image: url('../images/desktop/photo-will-desktop.jpg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  
+    .slider__previous .reviews__frame {
+      width: 136px;
+      height: 136px;
+      background-image: url('../images/desktop/photo-john-desktop.jpg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    
+  
+    .slider__next .reviews__frame {
+      width: 136px;
+      height: 136px;
+      background-image: url('../images/desktop/photo-elisabeth-desktop.jpg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+  .reviews .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+    .reviews__list {
+       display: flex;
+       justify-content: space-around;
+       width: 626px;
+      }
+  
+      .reviews__item {
+        // display: flex;
+  text-align: center;
+      }
+    }
