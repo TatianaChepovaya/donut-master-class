@@ -1,50 +1,45 @@
-.hero{
-    &::before{
-    content: '';  
-    background-image:url(../src/images/desktop/spoon.png);
-    }
+.hero {
+  &::before {
+    content: '';
+  }
 
-    @media screen and (min-width: 768px){
-        text-align: center;
-        margin-left: auto; 
+  @media screen and (min-width: 768px) {
+    text-align: center;
+    margin-left: auto;
     margin-right: auto;
-    }
+  }
 
-    @media screen and (min-width: 480px) {
-        text-align: center;
-        margin-left: auto; 
+  @media screen and (min-width: 480px) {
+    text-align: center;
+    margin-left: auto;
     margin-right: auto;
-    }
-
-
+  }
 }
-
 
 .hero__title {
-    color: #2E2520;
-    font-family: Caveat Brush;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 64px;
-    line-height: 65px;
-    margin-bottom: 15px;
-    margin-top: 85px;
-    
+  color: #2e2520;
+  font-family: Caveat Brush;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 65px;
+  margin-bottom: 15px;
+  margin-top: 85px;
 }
-.hero__name{
-    color: #2E2520;  
-font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 29px;
-margin-bottom: 28px;
-}
-
-.hero__btn{
-    margin-bottom: 57px;
+.hero__name {
+  color: #2e2520;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 28px;
 }
 
-.hero__socials{
-    margin-bottom: 56px;
+.hero__btn {
+  margin-bottom: 57px;
+}
+
+.hero__socials {
+  margin-bottom: 56px;
 }
