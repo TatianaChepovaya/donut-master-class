@@ -1,25 +1,29 @@
-.about-us {
-  @media screen and(min-width: 768px) {
-    margin-right: 67px;
-    margin-left: 71px;
-  }
-  @media screen and(min-width: 1280px) {
-    margin-right: 229px;
-  }
-}
 .about-us__conteiner {
-  @media screen and(min-width: 1280px) {
-    display: flex;
-    flex-direction: row;
-  }
-  @media screen and(min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: inline-flex;
     flex-direction: row;
+    align-items: flex-end;
+    padding-right: 67px;
+    padding-left: 11px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: inline-flex;
+    flex-direction: row;
+    padding-right: 229px;
+    padding-left: 71px;
+    align-items: center;
   }
 }
 .about-us__title {
   text-align: center;
+  @media screen and (min-width: 1280px) {
+    text-align: start;
+  }
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
+
 .about-us__text {
   font-family: Montserrat;
   font-style: normal;
@@ -29,16 +33,15 @@
   color: var(--text-color);
 
   &:not(:last-child) {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 }
-.class {
-  display: flex;
 
-  @media screen and(min-width: 768px) {
-    display: inline-flex;
-    flex-direction: row;
+.about-us__image {
+  @media screen and (min-width: 768px) {
     margin-right: 25px;
-    margin-left: 12px;
+  }
+  @media screen and(min-width: 1280px) {
+    margin-right: 76px;
   }
 }
