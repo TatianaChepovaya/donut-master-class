@@ -1,9 +1,3 @@
-.container-tablet {
-  @media screen and (min-width: 769px) {
-    padding: 0 65px 0;
-  }
-}
-
 .registration {
   text-align: center;
 
@@ -19,7 +13,7 @@
     background-color: var(--milky-background-color);
   }
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     &__global-case {
       box-shadow: none;
       background-color: transparent;
@@ -89,7 +83,7 @@
     text-align: center;
   }
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
     padding: 35px 20px 35px 34px;
