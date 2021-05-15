@@ -55,6 +55,11 @@
   fill: var(--secondary-color);
 }
 
+.rate--false {
+  fill: none;
+  stroke: var(--secondary-color);
+}
+
 @media screen and (max-width: 767px) {
   .slider__previous,
   .slider__next {
@@ -64,6 +69,7 @@
 
 .pagination__button {
   border: none;
+  background-color: inherit;
   padding: 15px;
 }
 

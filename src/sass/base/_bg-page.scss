@@ -1,0 +1,54 @@
+@media screen and (max-width: 767px) {
+    .bg-container-up {
+      // background-color:tan;
+      background-image: url('../images/bg/bg-up-mobile.svg');
+      background-position: right bottom 565px;
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+    }
+  
+    .bg-container-down {
+      // padding-top: 10px;
+      // background-color: aquamarine;
+      background-image: url('../images/bg/bg-down-mobile.svg');
+      background-position: right top 25px;
+      background-repeat: no-repeat;
+      background-size: 100% auto ;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    .bg-container-up {
+      background-image: url('../images/bg/bg-up-tablet.svg');
+      background-position: right bottom 110px;
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+    }
+  
+    .bg-container-down {
+      padding-top: 40px;
+      // background-color: aquamarine;
+      background-image: url('../images/bg/bg-down-tablet.svg');
+      background-position: right top;
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+    }
+  }
+  
+  @media screen and (min-width: 1279px) {
+    .bg-container-up {
+      background-image: url('../images/bg/bg-up-desktop.svg');
+      background-position: right bottom 70px;
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+    }
+  
+    .bg-container-down {
+      // padding-top: 10px;
+      // background-color: aquamarine;
+      background-image: url('../images/bg/bg-down-desktop.svg');
+      background-position: right top;
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+    }
+  }
