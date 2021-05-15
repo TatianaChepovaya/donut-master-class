@@ -199,3 +199,93 @@
     transform: translateY(55px);
   }
 }
+
+/* ===[ Turntable ]=== */
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg) rotateY(0) scale(1);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg) rotateY(0) scale(1);
+  }
+}
+
+@-moz-keyframes rotate {
+  0% {
+    -moz-transform: rotate(0deg) rotateY(0) scale(1);
+  }
+
+  100% {
+    -moz-transform: rotate(360deg) rotateY(0) scale(1);
+  }
+}
+
+@-ms-keyframes rotate {
+  0% {
+    -ms-transform: rotate(0deg) rotateY(0) scale(1);
+  }
+
+  100% {
+    -ms-transform: rotate(360deg) rotateY(0) scale(1);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) rotateY(0) scale(1);
+  }
+
+  100% {
+    transform: rotate(360deg) rotateY(0) scale(1);
+  }
+}
+
+.agenda__item:hover .agenda__item--donat {
+  -webkit-animation: rotate 1s linear infinite;
+  -moz-animation: rotate 1s linear infinite;
+  -ms-animation: rotate 1s linear infinite;
+  animation: rotate 1s linear infinite;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: 0.25s ease;
+}
+
+.agenda--read-more {
+  display: none;
+}
+
+.program__text {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: 0.25s ease;
+}
+
+.agenda--read-more:checked ~ .program__text {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.agenda--read-more ~ .read-more-trigger:before {
+  content: 'Read more';
+}
+
+.agenda--read-more:checked ~ .read-more-trigger:before {
+  content: 'Less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 0.5em;
+  color: #666;
+  font-size: 0.9em;
+  line-height: 2;
+}
