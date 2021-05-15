@@ -9,5 +9,8 @@
   --hover-focus-color: #876655;
   --program-event-title: #000000;
 
-  --registration-box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+  --registration-box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
+    4px 4px 4px rgba(171, 129, 108, 0.15);
+
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

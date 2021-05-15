@@ -57,7 +57,7 @@ body {
   font-size: 18px;
   line-height: 1.27;
   margin-bottom: 13px;
-  color: #000000;
+  color: var(--program-event-title);
 
   @media screen and (min-width: 1280px) {
     font-size: 24px;
@@ -78,6 +78,7 @@ body {
   cursor: pointer;
   border-radius: 25px;
   border: none;
+  transition: background-color var(--animation);
 
   &:hover,
   &:focus {
@@ -88,5 +89,18 @@ body {
     width: 158px;
     height: 45px;
     font-size: 24px;
+  }
+}
+
+.registration-donut {
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    
   }
 }

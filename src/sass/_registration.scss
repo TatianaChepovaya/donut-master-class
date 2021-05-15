@@ -39,13 +39,10 @@
   }
 
   &__time {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.22;
-    color: var(--text-color);
-  }
-
-  &__place {
+    width: 160px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 25px;
     font-weight: 500;
     font-size: 18px;
@@ -79,16 +76,30 @@
     border-top: none;
     border-right: none;
     border-bottom: 1px solid var(--secondary-color);
+    transition: border-bottom var(--animation);
+    outline: none;
   }
 
   &__input::placeholder {
     font-size: 16px;
-    line-height:1.25;
+    line-height: 1.25;
     color: var(--ph-color);
+    transition: color var(--animation);
   }
 
   &__btn-case {
     text-align: center;
+  }
+
+  &__label:hover &__input::placeholder {
+    color: var(--program-event-title);
+  }
+
+  &__label:hover &__input,
+  &__label:focus &__input {
+    border-bottom: 1px solid var(--program-event-title);
+    border-radius: 3px;
+    outline: none;
   }
 
   @media screen and (min-width: 768px) {
@@ -112,6 +123,10 @@
       border-top: none;
       border-right: 1px solid var(--secondary-color);
       border-bottom: none;
+    }
+
+    &__time {
+      text-align: end;
     }
 
     &__input-case {
@@ -138,21 +153,20 @@
     padding: 35px 100px 35px 104px;
     margin-left: auto;
     margin-right: auto;
-  }
 
-  &__input-case {
-    margin-right: 45px;
-  }
+    &__input-case {
+      margin-right: 45px;
+    }
 
-  &__time,
-  &__place,
-  &__cost {
-    font-size: 20px;
-    line-height: 1.2;
-  }
+    &__time,
+    &__cost {
+      font-size: 20px;
+      line-height: 1.2;
+    }
 
-  &__descr {
-    font-size: 18px;
-    line-height: 1.2;
+    &__descr {
+      font-size: 18px;
+      line-height: 1.2;
+    }
   }
 }
