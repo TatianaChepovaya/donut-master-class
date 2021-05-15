@@ -1,0 +1,201 @@
+.agenda {
+  padding-top: 30px;
+}
+@media (min-width: 1280px) {
+  .agenda__container {
+    padding-left: 158px;
+    padding-right: 158px;
+  }
+}
+.agenda__title {
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
+}
+@media screen and (min-width: 768px) {
+  .agenda--block-position {
+    display: flex;
+    justify-content: space-between;
+  }
+  .agenda--block-size {
+    flex-basis: calc((100% - 38px) / 2);
+  }
+}
+.program__text {
+  font-size: 16px;
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+  }
+}
+.program__item {
+  font-size: 16px;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+  }
+
+  &:first-child {
+    margin-top: 10px;
+
+    @media screen and (min-width: 1280px) {
+      margin-top: 15px;
+      font-size: 18px;
+    }
+  }
+  &::before {
+    content: '>';
+    margin-right: 7px;
+  }
+}
+.agenda__list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc((100% - 6px) / 2);
+  justify-content: space-between;
+  margin-top: 62px;
+}
+
+@media screen and (min-width: 768px) {
+  .agenda__list {
+    flex-basis: calc((100% - 14px) / 3 * 2);
+    margin-top: 0px;
+    bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .agenda__list {
+    flex-basis: calc((100% - 38px) / 2);
+    bottom: 40px;
+  }
+}
+
+.agenda__item {
+  position: relative;
+  background-color: #fef3e4;
+  border-radius: 50%;
+  width: 142px;
+  height: 142px;
+  box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+
+  @media screen and (min-width: 1280px) {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+.agenda__item--donat {
+  position: absolute;
+  top: -20%;
+  left: 35px;
+}
+
+.agenda__item--donat-size-1 {
+  width: 76.52px;
+  height: 84.41px;
+}
+
+.agenda__item--donat-size-2 {
+  width: 64.86px;
+  height: 71.89px;
+}
+
+.agenda__item--donat-size-3 {
+  width: 69.42px;
+  height: 76.52px;
+}
+
+.agenda__item--donat-size-4 {
+  width: 65.48px;
+  height: 72.58px;
+}
+
+.agenda__item:nth-child(-n + 2) {
+  margin-bottom: 61px;
+}
+
+.agenda__item:nth-child(2n + 2) {
+  transform: translateY(25px);
+}
+
+.title__secondary {
+  font-family: Caveat Brush;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.28;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.agenda__text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: center;
+  margin-top: 13px;
+}
+
+.agenda__item--icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 13px;
+}
+
+@media screen and (min-width: 1280px) {
+  .agenda__item {
+    width: 180px;
+    height: 180px;
+  }
+
+  .agenda__item--donat-size-1 {
+    width: 97px;
+    height: 107px;
+  }
+
+  .agenda__item--donat-size-2 {
+    width: 83px;
+    height: 92px;
+  }
+
+  .agenda__item--donat-size-3 {
+    width: 88px;
+    height: 97px;
+  }
+
+  .agenda__item--donat-size-4 {
+    width: 83px;
+    height: 92px;
+  }
+
+  .agenda__item--donat {
+    top: -25%;
+    left: 45px;
+  }
+
+  .title__secondary {
+    font-size: 24px;
+    line-height: 1.25;
+    text-align: center;
+    margin-top: 63px;
+  }
+
+  .agenda__text {
+    font-size: 16px;
+    line-height: 1.21;
+    margin-top: 16px;
+  }
+
+  .agenda__item--icon {
+    margin-top: 17px;
+  }
+  .agenda__item:nth-child(2n + 2) {
+    transform: translateY(55px);
+  }
+}

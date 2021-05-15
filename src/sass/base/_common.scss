@@ -15,8 +15,8 @@ body {
 }
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
   margin-right: auto;
   margin-left: auto;
 
@@ -44,7 +44,6 @@ body {
 .title {
   font-family: 'Caveat Brush', sans-serif;
   font-size: 24px;
-  line-height: 2.7;
   margin-bottom: 18px;
 
   @media screen and (min-width: 1280px) {

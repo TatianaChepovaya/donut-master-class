@@ -1,42 +1,87 @@
 <section class="agenda">
   <div class="container agenda__container">
-    <div class="program">
-      <h2 class="title">Program</h2>
-      <p class="program__text">
-        Indulge in this immersive sweet treat experience with The Chef Donut Queen in her New York
-        donut shop!
-      </p>
-      <ul class="program__list">
-        <li class="program__item">A stand up history of donuts</li>
-        <li class="program__item">Make 3 donut flavors of your choice</li>
-        <li class="program__item">Enjoy all-you-can-eat donuts</li>
-        <li class="program__item">Cocktail pairings and coffee included</li>
-        <li class="program__item">Photoshoot by professional photographer</li>
-        <li class="program__item">Secret receipt of cooking from Eva</li>
-        <li class="program__item">All products are included in the price</li>
-        <p class="program__text">
-          Come with your dear people and friends and you will spend an unforgettable time and will
-          become a real professional in donuts cooking!
+    <h2 class="title agenda__title">Program</h2>
+    <div class="agenda--block-position">
+      <div class="agenda--block-size">
+        <p class="program__text">Indulge in this immersive sweet treat experience with The Chef Donut Queen in her New
+          York donut shop!</p>
+        <ul class="list program__list">
+          <li class="program__item">A stand up history of donuts</li>
+          <li class="program__item">Make 3 donut flavors of your choice</li>
+          <li class="program__item">Enjoy all-you-can-eat donuts</li>
+          <li class="program__item">Cocktail pairings and coffee included</li>
+          <li class="program__item">Photoshoot by professional photographer</li>
+          <li class="program__item">Secret receipt of cooking from Eva</li>
+          <li class="program__item">All products are included in the price</li>
+        </ul>
+        <p class="program__text">Come with your dear people and friends
+          and you will spend an unforgettable time and
+          will become a real professional in donuts cooking!
         </p>
-      </ul>
+      </div>
+      <div class="agenda--block-size">
+        <ul class="list agenda__list">
+
+          <li class="agenda__item">
+            <div class="agenda__item--donat">
+
+              <picture>
+                <source
+                  srcset="../src/images/mobile/donut-1-mobile=tablet.png 1x, ../src/images/mobile/donut-1-mobile=tablet@2x.png 2x"
+                  media="(max-width: 1279px)" />
+                <source srcset="../src/images/desktop/donut-1-desktop.png 1x, ../src/images/desktop/donut-1-desktop.png 2x"
+                  media="(min-width: 1280px)" type="image/png"/>
+                  <img class="agenda__item--donat-size-2" src="../src/images/mobile/donut-1-mobile=tablet.png" alt="пончик 1">
+              </picture>
+            </div>
+            <h3 class="title__secondary">Type of the event</h3>
+            <p class="agenda__text">Cooking classes</p>
+            <svg class="agenda__item--icon" width=20 height=18><use href="../src/images/sprite.svg#icon-chef-hat"></use></svg>
+          </li>
+
+          <li class="agenda__item">
+            <div class="agenda__item--donat">
+              <source srcset="../src/images/mobile/donut-2-mobile=tablet.png 1x, ../src/images/mobile/donut-2-mobile=tablet@2x.png 2x"
+                media="(max-width: 1279px)"/>
+              <source srcset="../src/images/desktop/donut-2-desktop.png 1x, ../src/images/desktop/donut-2-desktop.png 2x"
+                media="(min-width: 1280px)"/>
+              <img class="agenda__item--donat-size-2" src="../src/images/mobile/donut-2-mobile=tablet.png" alt="пончик 2">
+              </picture>
+            </div>
+            <h3 class="title__secondary">Number of guests</h3>
+            <p class="agenda__text">1 to 20</p>
+            <svg class="agenda__item--icon" width=20 height=18><use href="../src/images/sprite.svg#icon-people"></use></svg>
+          </li>
+
+          <li class="agenda__item">
+            <div class="agenda__item--donat">
+              <source srcset="../src/images/mobile/donut-3-mobile=tablet.png 1x, ../src/images/mobile/donut-3-mobile=tablet@2x.png 2x"
+                media="(max-width: 1279px)" />
+              <source srcset="../src/images/desktop/donut-3-desktop.png 1x, ../src/images/desktop/donut-3-desktop.png 2x"
+                media="(min-width: 1280px)"/>
+              <img class="agenda__item--donat-size-2" src="../src/images/mobile/donut-3-mobile=tablet.png" alt="пончик 3">
+              </picture>
+            </div>
+            <h3 class="title__secondary">Time of the event</h3>
+            <p class="agenda__text">18:30 (2.5 hours)</p>
+            <svg class="agenda__item--icon" width=20 height=20><use href="../src/images/sprite.svg#icon-clock"></use></svg>
+          </li>
+
+          <li class="agenda__item">
+            <div class="agenda__item--donat">
+              <source srcset="../src/images/mobile/donut-4-mobile=tablet.png 1x, ../src/images/mobile/donut-4-mobile=tablet@2x.png 2x"
+                media="(max-width: 1279px)" />
+              <source srcset="../src/images/desktop/donut-4-desktop.png 1x, ../src/images/desktop/donut-4-desktop.png 2x"
+                media="(min-width: 1280px)"/>
+              <img class="agenda__item--donat-size-2" src="../src/images/mobile/donut-4-mobile=tablet.png" alt="пончик 4">
+              </picture>
+            </div>
+            <h3 class="title__secondary">The host speaks</h3>
+            <p class="agenda__text">English, French</p>
+            <svg class="agenda__item--icon" width=25 height=17><use href="../src/images/sprite.svg#icon-chat"></use></svg>
+          </li>
+        </ul>
+      </div>
     </div>
-    <ul class="agenda__list">
-      <li class="agenda__item">
-        <h3 class="title__secondary">Type of the event</h3>
-        <p class="agenda__text">Cooking classes</p>
-      </li>
-      <li class="agenda__item">
-        <h3 class="title__secondary">Number of guests</h3>
-        <p class="agenda__text">1 to 20</p>
-      </li>
-      <li class="agenda__item">
-        <h3 class="title__secondary">Time of the event</h3>
-        <p class="agenda__text">18:30 (2.5 hours)</p>
-      </li>
-      <li class="agenda__item">
-        <h3 class="title__secondary">The host speaks</h3>
-        <p class="agenda__text">English, French</p>
-      </li>
-    </ul>
   </div>
 </section>
