@@ -1,5 +1,21 @@
 .about-us {
-  padding: 0 15px;
+  @media screen and(min-width: 768px) {
+    margin-right: 67px;
+    margin-left: 71px;
+  }
+  @media screen and(min-width: 1280px) {
+    margin-right: 229px;
+  }
+}
+.about-us__conteiner {
+  @media screen and(min-width: 1280px) {
+    display: flex;
+    flex-direction: row;
+  }
+  @media screen and(min-width: 768px) {
+    display: inline-flex;
+    flex-direction: row;
+  }
 }
 .about-us__title {
   text-align: center;
@@ -14,5 +30,15 @@
 
   &:not(:last-child) {
     margin-bottom: 15px;
+  }
+}
+.class {
+  display: flex;
+
+  @media screen and(min-width: 768px) {
+    display: inline-flex;
+    flex-direction: row;
+    margin-right: 25px;
+    margin-left: 12px;
   }
 }
