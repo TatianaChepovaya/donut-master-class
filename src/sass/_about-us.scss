@@ -11,6 +11,11 @@
     align-items: center;
   }
 }
+@media screen and (min-width: 1280px) {
+  .about-us__bloc {
+    padding-right: 158px;
+  }
+}
 .about-us__title {
   text-align: center;
   @media screen and (min-width: 1280px) {
