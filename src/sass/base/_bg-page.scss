@@ -2,7 +2,7 @@
   .bg-container-up {
     // background-color:tan;
     background-image: url('../images/bg/bg-up-mobile.svg');
-    background-position: right bottom 565px;
+    background-position: right top;
     background-repeat: no-repeat;
     background-size: 100% auto;
   }
@@ -25,7 +25,7 @@
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .bg-container-up {
     background-image: url('../images/bg/bg-up-tablet.svg');
-    background-position: right bottom 110px;
+    background-position: right top;
     background-repeat: no-repeat;
     background-size: 100% auto;
   }
