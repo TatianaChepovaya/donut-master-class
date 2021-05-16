@@ -8,6 +8,22 @@
 //     }
 // }
 
+.hero__container {
+  display: flex;
+  
+}
+
+.hero__spoon {
+  display: none;
+
+  @media screen and (min-width: 1280px){
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -200px;
+    
+  }
+
+}
 .hero__info {
   display: flex;
   flex-direction: column;
@@ -23,13 +39,10 @@
 
   @media screen and (min-width: 1280px) {
     display: block;
-    margin-left: 158px;
+    margin-left: 88px;
   }
 }
 
-// .spoon {
-//     display: flex;
-// }
 .hero__title {
   color: #2e2520;
   font-family: Caveat Brush;
@@ -89,4 +102,7 @@
   @media screen and (min-width: 768px) and(max-width:1279px) {
     margin-top: 31px;
   }
+}
+.header__donuts {
+  display: flex;
 }
