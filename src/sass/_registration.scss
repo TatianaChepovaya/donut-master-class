@@ -8,7 +8,6 @@
     font-weight: 400;
   }
 
-
   &__global-case {
     padding-top: 15px;
     padding-bottom: 45px;
@@ -19,6 +18,7 @@
 
   @media screen and (min-width: 768px) {
     &__global-case {
+      position: relative;
       padding-bottom: 50px;
       padding-top: 40px;
       box-shadow: none;
@@ -32,6 +32,9 @@
 
 .registration-form {
   padding: 0 15px 0 15px;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
 
   &__info-case {
     padding-bottom: 20px;
@@ -85,31 +88,30 @@
     font-size: 16px;
     line-height: 1.25;
     color: var(--ph-color);
-    transition: color var(--animation);
+    transition: color var(--animation), outline var(--animation);
   }
 
   &__btn-case {
     text-align: center;
   }
 
-  &__label:hover &__input::placeholder {
-    color: var(--program-event-title);
+  &__label:hover &__input {
+    border-radius: 3px;
+    outline: 1px solid var(--secondary-color);
+    outline-style: auto;
   }
 
-  &__label:hover &__input,
-  &__label:focus &__input {
-    border-bottom: 1px solid var(--program-event-title);
+  &__input:focus {
     border-radius: 3px;
-    outline: none;
+    outline: 1px solid var(--secondary-color);
+    outline-style: auto;
   }
 
   @media screen and (min-width: 768px) {
-    position: relative;
     display: flex;
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
-    width: 660px;
     height: 260px;
     padding: 35px 20px 35px 34px;
     box-shadow: var(--registration-box-shadow);
@@ -181,12 +183,102 @@
     display: block;
     position: absolute;
     left: -70px;
-    top: -70px;
-    z-index: -1;
+    top: 20px;
+    z-index: 5;
+    transition: left 6000ms cubic-bezier(0.2, 0.2, 0.2, 0.2);
   }
 
   @media screen and (min-width: 1280px) {
-    left: -150px;
-    top: -70px;
+    left: -10px;
+    top: 62px;
   }
 }
+
+/* ===[ Turntable ]=== */
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg) rotateY(0) scale(1);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg) rotateY(0) scale(1);
+  }
+}
+
+@-moz-keyframes rotate {
+  0% {
+    -moz-transform: rotate(0deg) rotateY(0) scale(1);
+  }
+
+  100% {
+    -moz-transform: rotate(360deg) rotateY(0) scale(1);
+  }
+}
+
+@-ms-keyframes rotate {
+  0% {
+    -ms-transform: rotate(0deg) rotateY(0) scale(1);
+  }
+
+  100% {
+    -ms-transform: rotate(360deg) rotateY(0) scale(1);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) rotateY(0) scale(1);
+  }
+
+  100% {
+    transform: rotate(360deg) rotateY(0) scale(1);
+  }
+}
+
+.registration__global-case:hover .registration-donut {
+  left: 450px;
+  transform: rotate(180deg);
+
+  -webkit-animation: rotate 1.7s linear 3.5;
+  -moz-animation: rotate 1.7s linear 3.5;
+  -ms-animation: rotate 1.7s linear 3.5;
+  animation: rotate 1.7s linear 3.5;
+}
+
+.registration-donut-hide {
+  position: absolute;
+  left: -60px;
+  top: 220px;
+  transform: scale(1);
+  transition: left 1000ms var(--animation), top 1000ms var(--animation), transform 4000ms var(--animation);
+}
+
+.registration__global-case:hover .registration-donut-hide {
+  left: 20px;
+  top: 135px;
+  transform: scale(1.2);
+}
+
+// .registration-donut {
+
+// }
+
+// .registration-donut {
+//   animation: animate30 6000ms infinite 4000ms;
+
+// }
+
+// @keyframes animate30 {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+
+//   50% {
+//     transform: rotate(360deg);
+//   }
+
+//   100% {
+//     transform: rotate(0deg);
+//   }
+// }

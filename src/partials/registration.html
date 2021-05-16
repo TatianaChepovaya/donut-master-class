@@ -22,22 +22,37 @@
         <div class="registration-form__btn-case">
           <button type="submit" class="button">Register</button>
         </div>
-        <picture class="registration-donut">
+        <picture class="registration-donut-hide">
           <source
             srcset="
-              ./images/tablet/donut-5-tablet=desktop.png    1x,
-              ./images/tablet/donut-5-tablet=desktop@2x.png 2x
+              ./images/desktop/donut-3-desktop@2x.png    1x,
+              ./images/desktop/donut-3-desktop@2x.png 2x
             "
-            media="(min-width: 1200px)"
+            media="(min-width: 768px)"
           />
           <img
             class="registration-donut__img"
-            src="./images/tablet/donut-5-tablet=desktop.png"
+            src="./images/desktop/donut-3-desktop@2x.png"
             alt="Eated donut"
-            width="250"
+            width="130"
           />
         </picture>
       </form>
+      <picture class="registration-donut">
+        <source
+          srcset="
+            ./images/tablet/donut-5-tablet=desktop.png 1x,
+            ./images/tablet/donut-5-tablet=desktop@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <img
+          class="registration-donut__img"
+          src="./images/tablet/donut-5-tablet=desktop.png"
+          alt="Eated donut"
+          width="250"
+        />
+      </picture>
     </div>
   </div>
 </section>
