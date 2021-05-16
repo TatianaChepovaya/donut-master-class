@@ -55,7 +55,7 @@
     margin-bottom: 15px;
   }
 }
-.hero__title-name {
+.hero__name {
   color: #2e2520;
   font-family: Montserrat;
   font-style: normal;
@@ -73,15 +73,14 @@
 }
 
 .hero__btn {
-  margin-bottom: 30px;
+
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 26px;
+    padding-top: 26px;
   }
 }
 
 .hero__socials {
-  margin-top: 45px;
   margin-top: 45px;
 
   @media screen and (min-width: 1280px) {
