@@ -1,18 +1,19 @@
-@media (min-width: 769px) {
-  .agenda__container {
-    padding-left: 66px;
-    padding-right: 66px;
-  }
+.agenda {
+  padding-top: 30px;
 }
-
 @media (min-width: 1280px) {
   .agenda__container {
-    padding-left: 228px;
-    padding-right: 228px;
+    padding-left: 158px;
+    padding-right: 158px;
   }
 }
-
-@media screen and (min-width: 769px) {
+.agenda__title {
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
+}
+@media screen and (min-width: 768px) {
   .agenda--block-position {
     display: flex;
     justify-content: space-between;
@@ -21,41 +22,56 @@
     flex-basis: calc((100% - 38px) / 2);
   }
 }
-
-.program__list {
-    list-style: none;
+.program__text {
+  font-size: 16px;
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+  }
 }
+.program__item {
+  font-size: 16px;
+  margin-bottom: 10px;
 
-.program__item::before{
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+  }
+
+  &:first-child {
+    margin-top: 10px;
+
+    @media screen and (min-width: 1280px) {
+      margin-top: 15px;
+      font-size: 18px;
+    }
+  }
+  &::before {
     content: '>';
     margin-right: 7px;
-} 
-
+  }
+}
 .agenda__list {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-basis: calc((100% - 6px) / 2);
   justify-content: space-between;
   margin-top: 62px;
-  list-style: none;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .agenda__list {
-    flex-basis: calc((100% - 14px) / 2);
+    flex-basis: calc((100% - 14px) / 3 * 2);
     margin-top: 0px;
+    bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .agenda__list {
     flex-basis: calc((100% - 38px) / 2);
+    bottom: 40px;
   }
 }
-
-    .program__item::before{
-    margin-right: 8px;
-    } 
 
 .agenda__item {
   position: relative;
@@ -64,6 +80,11 @@
   width: 142px;
   height: 142px;
   box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+
+  @media screen and (min-width: 1280px) {
+    width: 180px;
+    height: 180px;
+  }
 }
 
 .agenda__item--donat {
@@ -99,7 +120,6 @@
 .agenda__item:nth-child(2n + 2) {
   transform: translateY(25px);
 }
-
 
 .title__secondary {
   font-family: Caveat Brush;
@@ -155,27 +175,117 @@
   }
 
   .agenda__item--donat {
-  top: -25%;
-  left: 45px;
+    top: -25%;
+    left: 45px;
   }
 
-  .title__secondary{
-  font-size: 24px;
-  line-height: 1.25;
-  text-align: center;
-  margin-top: 63px;
+  .title__secondary {
+    font-size: 24px;
+    line-height: 1.25;
+    text-align: center;
+    margin-top: 63px;
   }
 
   .agenda__text {
-  font-size: 16px;
-  line-height: 1.21;
-  margin-top: 16px;
+    font-size: 16px;
+    line-height: 1.21;
+    margin-top: 16px;
   }
 
   .agenda__item--icon {
-  margin-top: 17px;
+    margin-top: 17px;
   }
   .agenda__item:nth-child(2n + 2) {
-  transform: translateY(55px); 
+    transform: translateY(55px);
   }
+}
+
+/* ===[ Turntable ]=== */
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg) rotateY(0) scale(1);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg) rotateY(0) scale(1);
+  }
+}
+
+@-moz-keyframes rotate {
+  0% {
+    -moz-transform: rotate(0deg) rotateY(0) scale(1);
+  }
+
+  100% {
+    -moz-transform: rotate(360deg) rotateY(0) scale(1);
+  }
+}
+
+@-ms-keyframes rotate {
+  0% {
+    -ms-transform: rotate(0deg) rotateY(0) scale(1);
+  }
+
+  100% {
+    -ms-transform: rotate(360deg) rotateY(0) scale(1);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) rotateY(0) scale(1);
+  }
+
+  100% {
+    transform: rotate(360deg) rotateY(0) scale(1);
+  }
+}
+
+.agenda__item:hover .agenda__item--donat {
+  -webkit-animation: rotate 1s linear infinite;
+  -moz-animation: rotate 1s linear infinite;
+  -ms-animation: rotate 1s linear infinite;
+  animation: rotate 1s linear infinite;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: 0.25s ease;
+}
+
+.agenda--read-more {
+  display: none;
+}
+
+.program__text {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: 0.25s ease;
+}
+
+.agenda--read-more:checked ~ .program__text {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.agenda--read-more ~ .read-more-trigger:before {
+  content: 'Read more';
+}
+
+.agenda--read-more:checked ~ .read-more-trigger:before {
+  content: 'Less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 0.5em;
+  color: #666;
+  font-size: 0.9em;
+  line-height: 2;
 }
