@@ -2,6 +2,7 @@
   border: none;
   border-bottom: 1px solid var(--secondary-color);
   display: block;
+  background-color: transparent;
   &::placeholder {
     color: var(--ph-color);
     font-weight: normal;
@@ -29,6 +30,7 @@
   &:nth-child(2) {
     margin-bottom: 37px;
   }
+  background-color: transparent;
 }
 
 .contacts__title {
