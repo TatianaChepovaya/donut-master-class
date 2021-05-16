@@ -247,11 +247,23 @@
 }
 
 .registration-donut-hide {
-  position: absolute;
-  left: -60px;
-  top: 220px;
-  transform: scale(1);
-  transition: left 1000ms var(--animation), top 1000ms var(--animation), transform 4000ms var(--animation);
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    left: -60px;
+    top: 220px;
+    transform: scale(1);
+    transition: left 1000ms var(--animation), top 1000ms var(--animation),
+      transform 4000ms var(--animation);
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: -80px;
+    top: 190px;
+  }
 }
 
 .registration__global-case:hover .registration-donut-hide {
@@ -259,26 +271,9 @@
   top: 135px;
   transform: scale(1.2);
 }
-
-// .registration-donut {
-
-// }
-
-// .registration-donut {
-//   animation: animate30 6000ms infinite 4000ms;
-
-// }
-
-// @keyframes animate30 {
-//   0% {
-//     transform: rotate(0deg);
-//   }
-
-//   50% {
-//     transform: rotate(360deg);
-//   }
-
-//   100% {
-//     transform: rotate(0deg);
-//   }
-// }
+.test-btn {
+  display: block;
+  width: 300px;
+  height: 150px;
+  cursor: pointer;
+}
