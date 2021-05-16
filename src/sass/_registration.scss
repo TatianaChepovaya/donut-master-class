@@ -8,7 +8,6 @@
     font-weight: 400;
   }
 
-
   &__global-case {
     padding-top: 15px;
     padding-bottom: 45px;
@@ -19,6 +18,7 @@
 
   @media screen and (min-width: 768px) {
     &__global-case {
+      position: relative;
       padding-bottom: 50px;
       padding-top: 40px;
       box-shadow: none;
@@ -32,6 +32,8 @@
 
 .registration-form {
   padding: 0 15px 0 15px;
+  position: relative;
+  z-index: 10;
 
   &__info-case {
     padding-bottom: 20px;
@@ -85,31 +87,30 @@
     font-size: 16px;
     line-height: 1.25;
     color: var(--ph-color);
-    transition: color var(--animation);
+    transition: color var(--animation), outline var(--animation);
   }
 
   &__btn-case {
     text-align: center;
   }
 
-  &__label:hover &__input::placeholder {
-    color: var(--program-event-title);
+  &__label:hover &__input {
+    border-radius: 3px;
+    outline: 1px solid var(--secondary-color);
+    outline-style: auto;
   }
 
-  &__label:hover &__input,
-  &__label:focus &__input {
-    border-bottom: 1px solid var(--program-event-title);
+  &__input:focus {
     border-radius: 3px;
-    outline: none;
+    outline: 1px solid var(--secondary-color);
+    outline-style: auto;
   }
 
   @media screen and (min-width: 768px) {
-    position: relative;
     display: flex;
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
-    width: 660px;
     height: 260px;
     padding: 35px 20px 35px 34px;
     box-shadow: var(--registration-box-shadow);
@@ -181,8 +182,8 @@
     display: block;
     position: absolute;
     left: -70px;
-    top: -70px;
-    z-index: -1;
+    top: 20px;
+    z-index: 5;
   }
 
   @media screen and (min-width: 1280px) {
