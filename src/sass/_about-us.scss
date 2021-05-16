@@ -1,21 +1,31 @@
-.about-us__conteiner {
+.about-us {
+  padding-top: 190px;
+}
+.about-us__container {
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    position: relative;
+    justify-content: flex-end;
   }
   @media screen and (min-width: 1280px) {
     display: flex;
     flex-direction: row;
-
     align-items: center;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .about-us__bloc {
     padding-right: 158px;
+    padding-left: 158px;
   }
 }
+.about-us__block {
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 290px) / 1);
+  }
+  @media screen and (min-width: 1280px) {
+    flex-basis: calc((100% - 430px) / 1);
+  }
+}
+
 .about-us__title {
   text-align: center;
   @media screen and (min-width: 1280px) {
@@ -34,49 +44,59 @@
   line-height: 1.25;
   color: var(--text-color);
 
-  &:not(:last-child) {
-    margin-bottom: 20px;
+  &:not(:first-child) {
+    margin-top: 18px;
+  }
+
+  @media screen and(min-width: 1280px) {
+    font-size: 18px;
   }
 }
 
 .about-us__image {
   @media screen and (min-width: 768px) {
-    margin-right: 25px;
+    position: absolute;
+    left: -58px;
+    top: 0;
   }
   @media screen and(min-width: 1280px) {
-    margin-right: 76px;
+    left: -5px;
+    top: -95px;
   }
 }
-
-.read-more-state {
+.about-us__read-more {
   display: none;
 }
-
-.read-more-target {
-  display: none;
-}
-
-.read-more-state:checked ~ .read-more-wrap .read-more-target {
-  display: block;
-}
-
-.read-more-state ~ .read-more-trigger:before {
-  content: 'Read more';
-}
-
-.read-more-state:checked ~ .read-more-trigger:before {
-  content: 'Less';
-}
-
-.read-more-trigger {
-  font-family: Caveat Brush;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 65px;
-  /* identical to box height, or 361% */
-
-  text-align: center;
-
-  color: #ab816c;
+@media screen and (max-width: 1279px) {
+  .about-us__read-more-text {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: 0.25s ease;
+  }
+  .about-us__read-more:checked ~ .about-us__read-more-text {
+    opacity: 1;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--text-color);
+    max-height: 999em;
+  }
+  .about-us__read-more ~ .read-more-trigger:before {
+    content: 'Read more';
+  }
+  .about-us__read-more:checked ~ .read-more-trigger:before {
+    content: 'Less';
+  }
+  .read-more-trigger {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 0.5em;
+    font-family: Caveat Brush;
+    font-size: 18px;
+    line-height: 3.6;
+    color: var(--secondary-color);
+  }
 }
