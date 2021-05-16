@@ -275,15 +275,15 @@
     max-height: 999em;
   }
 
-  .agenda--read-more ~ .read-more-trigger:before {
+  .agenda--read-more ~ .read-more--trigger:before {
     content: 'Read more';
   }
 
-  .agenda--read-more:checked ~ .read-more-trigger:before {
+  .agenda--read-more:checked ~ .read-more--trigger:before {
     content: 'Less';
   }
 
-  .read-more-trigger {
+  .read-more--trigger {
     cursor: pointer;
     display: inline-block;
     padding: 0 0.5em;
