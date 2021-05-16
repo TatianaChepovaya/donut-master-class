@@ -249,15 +249,16 @@
   animation: rotate 1s linear infinite;
 }
 
+.agenda--read-more {
+  display: none;
+}
+
+@media screen and (max-width: 1279px) {
 .read-more-target {
   opacity: 0;
   max-height: 0;
   font-size: 0;
   transition: 0.25s ease;
-}
-
-.agenda--read-more {
-  display: none;
 }
 
 .program__text {
@@ -285,7 +286,8 @@
   cursor: pointer;
   display: inline-block;
   padding: 0 0.5em;
-  color: #666;
+  color: var(--secondary-color);
   font-size: 0.9em;
   line-height: 2;
+}
 }
