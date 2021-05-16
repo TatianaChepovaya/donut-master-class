@@ -72,21 +72,13 @@
   }
 }
 
-.hero__btn {
-
-
-  @media screen and (min-width: 768px) {
-    padding-top: 26px;
-  }
-}
-
 .hero__socials {
   margin-top: 45px;
 
+  @media screen and (min-width: 768px) and (max-width:1279px) {
+    margin-top: 31px;
+  }
   @media screen and (min-width: 1280px) {
     margin-top: 65px;
-  }
-  @media screen and (min-width: 768px) {
-    margin-top: 31px;
   }
 }
