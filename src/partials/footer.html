@@ -1,23 +1,50 @@
 <footer class="footer">
-  <div class="container">
-    <div class="footer__socials">
-      <include src="./partials/socials.html"></include>
-    </div>
-    <div class="footer__contacts">
-      <a class="footer__link tel link" href="tel:9102228855">
-        <svg class="footer__icon" width="13" height="13">
-          <use href="../src/images/sprite.svg#icon-phone"></use>
-        </svg>
-        (910)222-8855</a
-      >
-      <!-- <a class="footer__link location link" href="">
+  <div class="footer__container">
+    <div class="container">
+      <div class="footer__socials">
+        <include src="./partials/socials.html"></include>
+      </div>
+      <div class="footer__contacts">
+        <a class="footer__link tel link" href="tel:9102228855">
+          <svg class="footer__icon" width="13" height="13">
+            <use href="../src/images/sprite.svg#icon-phone"></use>
+          </svg>
+          (910)222-8855</a
+        >
+        <!-- <a class="footer__link location link" href="">
         <svg class="footer__icon" width="11" height="15">
           <use href="../src/images/sprite.svg#icon-location"></use>
         </svg>
         New York</a
       > -->
-      <button class="footer__button" data-modal-open type="button">New York</button>
+        <button class="footer__button" data-modal-open type="button">New York</button>
+      </div>
     </div>
+    <picture class="footer__img">
+      <source
+        srcset="
+          ./images/desktop/spoon-in-plate-desktop.png    1x,
+          ./images/desktop/spoon-in-plate-desktop@2x.png 2x
+        "
+        media="(min-width:1280px)"
+      />
+      <source
+        srcset="
+          ./images/tablet/spoon-in-plate-tablet.png    1x,
+          ./images/tablet/spoon-in-plate-tablet@2x.png 2x
+        "
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="
+          ./images/mobile/spoon-in-plate-mobile.png    1x,
+          ./images/mobile/spoon-in-plate-mobile@2x.png 2x
+        "
+        media="(max-width:767px)"
+      />
+
+      <img class="" src="./images/Wheat flour.png" alt="spoon in plate" />
+    </picture>
   </div>
 </footer>
 
