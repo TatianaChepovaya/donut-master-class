@@ -254,40 +254,40 @@
 }
 
 @media screen and (max-width: 1279px) {
-.read-more-target {
-  opacity: 0;
-  max-height: 0;
-  font-size: 0;
-  transition: 0.25s ease;
-}
+  .read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: 0.25s ease;
+  }
 
-.program__text {
-  opacity: 0;
-  max-height: 0;
-  font-size: 0;
-  transition: 0.25s ease;
-}
+  .program__text--hidden {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: 0.25s ease;
+  }
 
-.agenda--read-more:checked ~ .program__text {
-  opacity: 1;
-  font-size: inherit;
-  max-height: 999em;
-}
+  .agenda--read-more:checked ~ .program__text--hidden {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+  }
 
-.agenda--read-more ~ .read-more-trigger:before {
-  content: 'Read more';
-}
+  .agenda--read-more ~ .read-more-trigger:before {
+    content: 'Read more';
+  }
 
-.agenda--read-more:checked ~ .read-more-trigger:before {
-  content: 'Less';
-}
+  .agenda--read-more:checked ~ .read-more-trigger:before {
+    content: 'Less';
+  }
 
-.read-more-trigger {
-  cursor: pointer;
-  display: inline-block;
-  padding: 0 0.5em;
-  color: var(--secondary-color);
-  font-size: 0.9em;
-  line-height: 2;
-}
+  .read-more-trigger {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 0.5em;
+    color: var(--secondary-color);
+    font-size: 0.9em;
+    line-height: 2;
+  }
 }
