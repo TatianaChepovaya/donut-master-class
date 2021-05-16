@@ -1,8 +1,43 @@
-@media screen and (max-width: 767px) {
+.bg-container-up {
+  @media screen and (max-width: 360px) {
+    background-position: left bottom 630px;
+  }
+  @media screen and (min-width: 360px) and (max-width: 580px) {
+    background-position: left bottom 570px;
+  }
+  @media screen and (min-width: 580px) and (max-width: 768px) {
+    background-position: left bottom 500px;
+  }
+}
+
+.bg-container-down {
+  @media screen and (max-width: 360px) {
+    background-position: right top 20px;
+  }
+  @media screen and (min-width: 360px) and (max-width: 420px) {
+    background-position: right top 10px;
+  }
+  @media screen and (min-width: 420px) and (max-width: 768px) {
+    background-position: right top -20px;
+  }
+}
+
+.bg-container-bottom {
+  @media screen and (max-width: 360px) {
+    background-position: left bottom 330px;
+  }
+  @media screen and (min-width: 360px) and (max-width: 540px) {
+    background-position: left bottom 230px;
+  }
+  @media screen and (min-width: 540px) and (max-width: 768px) {
+    background-position: left bottom 130px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .bg-container-up {
-    // background-color:tan;
     background-image: url('../images/bg/bg-up-mobile.svg');
-    background-position: right top;
+    // background-position: left bottom 619px;
     background-repeat: no-repeat;
     background-size: 100% auto;
   }
@@ -16,7 +51,7 @@
 
   .bg-container-bottom {
     background-image: url('../images/bg/bg-down-mobile.svg');
-    background-position: left bottom 330px;
+    // background-position: left bottom 330px;
     background-repeat: no-repeat;
     background-size: 100% auto;
   }
@@ -25,7 +60,7 @@
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .bg-container-up {
     background-image: url('../images/bg/bg-up-tablet.svg');
-    background-position: right top;
+    background-position: left bottom 107px;
     background-repeat: no-repeat;
     background-size: 100% auto;
   }
@@ -50,7 +85,7 @@
 @media screen and (min-width: 1279px) {
   .bg-container-up {
     background-image: url('../images/bg/bg-up-desktop.svg');
-    background-position: right bottom 70px;
+    background-position: left bottom 60px;
     background-repeat: no-repeat;
     background-size: 100% auto;
   }
