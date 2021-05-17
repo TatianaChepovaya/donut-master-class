@@ -106,3 +106,18 @@
     margin-top: 31px;
   }
 }
+
+.header__powder {
+  @media screen and (max-width: 1179px) {
+    display: none;
+  }
+  position: absolute;
+  right: 60px;
+  z-index: 2;
+  top: -19px;
+  opacity: 0;
+  transition: opacity 800ms linear;
+  &:hover {
+    opacity: 1;
+  }
+}
