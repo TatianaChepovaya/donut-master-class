@@ -88,9 +88,9 @@
 }
 
 .menu__button {
-  z-index: 2;
-  position: absolute;
-  right: 0;
+  z-index: 30;
+  position: fixed;
+  right: 20px;
 
   display: inline-flex;
   margin: 0;
@@ -102,6 +102,7 @@
 
   @media screen and (max-width: 767px) {
     top: 15px;
+    right: 67px;
   }
 
   @media screen and (min-width: 1280px) {
