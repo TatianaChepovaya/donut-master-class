@@ -1,43 +1,74 @@
-<div class="container">
-<nav class="navigation">
-  <!-- logo -->
-  <a class="link navigation__logo" href="">
+<div class="container header__containet">
+  <picture class="img">
+    <source
+      srcset="
+        ./images/tablet/eight-donuts-tablet.png    1x,
+        ./images/tablet/eight-donuts-tablet@2x.png 2x
+      "
+      media="(min-width: 768px)"
+    />
+    <img class="header__powder" src="./images/sugar.png" alt="" />
+    <img
+      class="header__eightdonuts"
+      src="./images/desktop/eight-donuts-desktop.png"
+      alt="eight-donuts"
+    />
+  </picture>
 
-    <picture>
-      <source srcset="/images/desktop/logo-desktop.png 1x, /images/desktop/logo-desktop@2x.png 2x" width="158" type="image/png"
-      media="(min-width: 1280px)" />
-      <source srcset="/images/mobile/logo-mobile=tablet.png 1x, /images/mobile/logo-mobile=tablet@2x.png 2x" type="image/png"
-      media="(max-width: 1279px)" />
+  <nav class="navigation">
+    <!-- logo -->
+    <a class="link navigation__logo" href="">
+      <picture>
+        <source
+          srcset="/images/desktop/logo-desktop.png 1x, /images/desktop/logo-desktop@2x.png 2x"
+          width="158"
+          type="image/png"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            /images/mobile/logo-mobile=tablet.png    1x,
+            /images/mobile/logo-mobile=tablet@2x.png 2x
+          "
+          type="image/png"
+          media="(max-width: 1279px)"
+        />
 
-      <img src="/images/mobile/logo-mobile=tablet.png" width="96" alt="Логотип">
-    </picture>
-  </a>
+        <img src="/images/mobile/logo-mobile=tablet.png" width="96" alt="Логотип" />
+      </picture>
+    </a>
 
+    <ul class="navigation__list list">
+      <li class="navigation__item">
+        <a class="navigation__link link" href="#about-us">About us</a>
+      </li>
+      <li class="navigation__item"><a class="navigation__link link" href="#program">Program</a></li>
+      <li class="navigation__item"><a class="navigation__link link" href="#reviews">Reviews</a></li>
+      <li class="navigation__item">
+        <a class="navigation__link link" href="#contacts">Contacts</a>
+      </li>
+    </ul>
 
-      <ul class="navigation__list list">
-        <li class="navigation__item"><a class="navigation__link link" href="#about-us">About us</a></li>
-        <li class="navigation__item"><a class="navigation__link link" href="#program">Program</a></li>
-        <li class="navigation__item"><a class="navigation__link link" href="#reviews">Reviews</a></li>
-        <li class="navigation__item"><a class="navigation__link link" href="#contacts">Contacts</a></li>
-      </ul>
-
-
-  <button class="menu__button is-open" type="button" aria-expanded="false" 
-    data-menu-button>
-    <svg class="menu__icon" width="30"  height="18" aria-label="Переключатель мобильного меню">
-      <use class="icon-menu" href="/images/sprite.svg#icon-menu"></use>
-      <use class="icon-menu-close" href="/images/sprite.svg#icon-close"></use>
-    </svg>
-  </button>
-
-</nav>
+    <button class="menu__button is-open" type="button" aria-expanded="false" data-menu-button>
+      <svg class="menu__icon" width="30" height="18" aria-label="Переключатель мобильного меню">
+        <use class="icon-menu" href="/images/sprite.svg#icon-menu"></use>
+        <use class="icon-menu-close" href="/images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+  </nav>
 
   <div class="menu__container" data-menu>
     <a class="link menu__logo" href="">
       <picture>
-        <source srcset="/images/mobile/logo-menu-mobile=tablet.png 1x, /images/mobile/logo-menu-mobile=tablet@2x.png 2x"
-          type="image/png" media="(max-width: 1279px)" />
-        <img src="/images/mobile/logo-menu-mobile=tablet.png" width="190" alt="Логотип">
+        <source
+          srcset="
+            /images/mobile/logo-menu-mobile=tablet.png    1x,
+            /images/mobile/logo-menu-mobile=tablet@2x.png 2x
+          "
+          type="image/png"
+          media="(max-width: 1279px)"
+        />
+        <img src="/images/mobile/logo-menu-mobile=tablet.png" width="190" alt="Логотип" />
       </picture>
     </a>
     <ul class="menu__list list">
@@ -47,6 +78,4 @@
       <li class="menu__item"><a class="menu__link link" href="#contacts">Contacts</a></li>
     </ul>
   </div>
-
-
 </div>
