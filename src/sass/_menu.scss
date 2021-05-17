@@ -89,7 +89,7 @@
 
 .menu__button {
   z-index: 30;
-  position: fixed;
+  position: absolute;
   right: 20px;
 
   display: inline-flex;
@@ -114,16 +114,18 @@
     fill: var(--hover-focus-color);
   }
 }
-
-.menu__button .icon-menu {
+.menu__button .icon-menu-close {
   display: none;
 }
-
-.menu__button.is-open .icon-menu {
+.menu__button.is-open .icon-menu-close {
   display: block;
 }
 
-.menu__button.is-open .icon-menu-close {
+.menu__button .icon-menu {
+  display: block;
+}
+
+.menu__button.is-open .icon-menu {
   display: none;
 }
 
