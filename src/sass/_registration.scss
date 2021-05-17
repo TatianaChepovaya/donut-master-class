@@ -271,9 +271,29 @@
   top: 135px;
   transform: scale(1.2);
 }
-.test-btn {
-  display: block;
-  width: 300px;
-  height: 150px;
-  cursor: pointer;
+
+.registration-confetti {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 1965px;
+
+    &__img {
+      width: 320px;
+      height: 330px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    right: 5px;
+    top: 2370px;
+
+    &__img {
+      width: 600px;
+      height: 575px;
+    }
+  }
 }
