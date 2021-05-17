@@ -236,7 +236,7 @@
   }
 }
 
-.registration__global-case:hover .registration-donut {
+.registration-form:hover ~ .registration-donut {
   left: 450px;
   transform: rotate(180deg);
 
@@ -266,7 +266,7 @@
   }
 }
 
-.registration__global-case:hover .registration-donut-hide {
+.registration-form:hover .registration-donut-hide {
   left: 20px;
   top: 135px;
   transform: scale(1.2);
