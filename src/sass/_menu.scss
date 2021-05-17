@@ -100,7 +100,7 @@
   cursor: pointer;
   transition: fill var(--animation);
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 767px) {
     top: 15px;
     right: 67px;
   }
