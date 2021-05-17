@@ -7,7 +7,7 @@
   @media screen and (min-width: 767px) {
     padding-top: 18px;
   }
-  
+
   &__frame {
     margin-bottom: 6px;
     border-radius: 50%;
@@ -70,6 +70,7 @@
   border: none;
   background-color: inherit;
   padding: 15px;
+  margin-top: 3px;
 }
 
 .button-line {
@@ -94,15 +95,12 @@
     height: 110px;
     display: inline-block;
     background-image: url('../images/desktop/photo-will-desktop.jpg');
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: url('../images/desktop/photo-will-desktop@2x.jpg');
-      }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/desktop/photo-will-desktop@2x.jpg');
+    }
     background-repeat: no-repeat;
     background-size: contain;
   }
-
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -116,11 +114,9 @@
     width: 186px;
     height: 186px;
     background-image: url('../images/desktop/photo-will-desktop.jpg');
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: url('../images/desktop/photo-will-desktop@2x.jpg');
-      }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/desktop/photo-will-desktop@2x.jpg');
+    }
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -130,11 +126,9 @@
     width: 110px;
     height: 110px;
     background-image: url('../images/desktop/photo-john-desktop.jpg');
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: url('../images/desktop/photo-john-desktop@2x.jpg');
-      }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/desktop/photo-john-desktop@2x.jpg');
+    }
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -144,15 +138,12 @@
     width: 110px;
     height: 110px;
     background-image: url('../images/desktop/photo-elisabeth-desktop.jpg');
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: url('../images/desktop/photo-elisabeth-desktop@2x.jpg');
-      }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/desktop/photo-elisabeth-desktop@2x.jpg');
+    }
     background-repeat: no-repeat;
     background-size: contain;
   }
-
 }
 
 @media screen and (min-width: 1279px) {
@@ -168,11 +159,9 @@
     width: 234px;
     height: 234px;
     background-image: url('../images/desktop/photo-will-desktop.jpg');
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: url('../images/desktop/photo-will-desktop@2x.jpg');
-      }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/desktop/photo-will-desktop@2x.jpg');
+    }
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -181,11 +170,9 @@
     width: 136px;
     height: 136px;
     background-image: url('../images/desktop/photo-john-desktop.jpg');
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: url('../images/desktop/photo-john-desktop@2x.jpg');
-      }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/desktop/photo-john-desktop@2x.jpg');
+    }
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -194,15 +181,12 @@
     width: 136px;
     height: 136px;
     background-image: url('../images/desktop/photo-elisabeth-desktop.jpg');
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: url('../images/desktop/photo-elisabeth-desktop@2x.jpg');
-      }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/desktop/photo-elisabeth-desktop@2x.jpg');
+    }
     background-repeat: no-repeat;
     background-size: contain;
   }
-  
 }
 
 @media screen and (min-width: 768px) {
