@@ -91,4 +91,11 @@ body {
   }
 }
 
+body {
+  cursor: url('../images/material-donut-cursor.png'), auto !important;
+}
 
+a:hover,
+button:hover {
+  cursor: url('../images/material-donut-pointer.png'), auto !important;
+}
