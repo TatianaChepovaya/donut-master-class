@@ -11,5 +11,5 @@
 
 $('.menu__link').on('click', function(){
   $('.menu__container').removeClass("is-open");
-
+$('.menu__button').removeClass("is-open");
 });
