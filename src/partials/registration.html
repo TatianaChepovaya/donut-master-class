@@ -3,7 +3,6 @@
     <div class="registration__global-case">
       <h2 class="registration__title title">Registration</h2>
       <form class="registration-form" data-aos="fade-up" data-aos-duration="3000">
-        >
         <div class="registration-form__info-case">
           <p class="registration-form__time">May 23, 11:00 New York</p>
           <p class="registration-form__cost">$ 699</p>
@@ -11,13 +10,34 @@
         <div class="registration-form__input-case">
           <p class="registration-form__descr">Apply your personal info for registration</p>
           <label class="registration-form__label">
-            <input type="text" class="registration-form__input" placeholder="Your name" />
+            <input
+              type="text"
+              class="registration-form__input"
+              name="Login"
+              placeholder="Your name"
+              required
+              minlength="5"
+              autocomplete="on"
+            />
           </label>
           <label class="registration-form__label">
-            <input type="text" class="registration-form__input" placeholder="Phone number" />
+            <input
+              type="tel"
+              class="registration-form__input"
+              name="phone_number"
+              placeholder="Phone number"
+              required
+              autocomplete="on"
+            />
           </label>
           <label class="registration-form__label">
-            <input type="text" class="registration-form__input" placeholder="Email" />
+            <input
+              type="email"
+              class="registration-form__input"
+              name="email"
+              placeholder="Email"
+              autocomplete="on"
+            />
           </label>
         </div>
         <div class="registration-form__btn-case">
