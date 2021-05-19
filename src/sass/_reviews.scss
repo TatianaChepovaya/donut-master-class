@@ -180,11 +180,10 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
-  
+
   .slider__previous .reviews__frame {
     width: 136px;
     height: 136px;
-    
 
     background-repeat: no-repeat;
     background-size: contain;
@@ -225,19 +224,19 @@
 
 #slide_previous1,
 #slide_current1,
-#slide_next1{
-  background-image: url('../images/desktop/photo-will-desktop.jpg');
+#slide_next1 {
+  background-image: url('../images/desktop/photo-john-desktop.jpg');
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url('../images/desktop/photo-will-desktop@2x.jpg');
+    background-image: url('../images/desktop/photo-john-desktop@2x.jpg');
   }
 }
 
 #slide_previous2,
 #slide_current2,
 #slide_next2 {
-  background-image: url('../images/desktop/photo-john-desktop.jpg');
+  background-image: url('../images/desktop/photo-will-desktop.jpg');
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url('../images/desktop/photo-john-desktop@2x.jpg');
+    background-image: url('../images/desktop/photo-will-desktop@2x.jpg');
   }
 }
 
@@ -309,5 +308,3 @@
 #slide_next15 {
   background-image: url('../images/photo/photo15.jpg');
 }
-
-
