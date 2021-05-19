@@ -58,11 +58,11 @@
 
 .rate__icon {
   fill: var(--secondary-color);
+  stroke: var(--secondary-color);
 }
 
 .rate--false {
   fill: none;
-  stroke: var(--secondary-color);
 }
 
 @media screen and (max-width: 767px) {
@@ -261,7 +261,7 @@
 }
 #slide_previous6,
 #slide_current6,
-#slide_next1 {
+#slide_next6 {
   background-image: url('../images/photo/photo6.jpg');
 }
 #slide_previous7,
@@ -281,7 +281,7 @@
 }
 #slide_previous10,
 #slide_current10,
-#slide_next1 {
+#slide_next10 {
   background-image: url('../images/photo/photo10.jpg');
 }
 #slide_previous11,

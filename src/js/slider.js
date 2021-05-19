@@ -113,23 +113,21 @@ const reviews = [
 ];
 
 let slideIndex = 2;
+let slidePrev = slideIndex - 1;
+let slideNext = slideIndex + 1;
+
 const quantityReviews = reviews.length;
-showSlides(slideIndex, slideIndex);
+showSlides(slideIndex, slidePrev, slideNext);
 
 const refs = {
-    showPreviousBtn: document.querySelector('.prev-slide'),
-    showNextBtn: document.querySelector('.next-slide'),
-    pikt: document.querySelector('[data-pict]'),
-    viewPagination: document.getElementById('view_count'),
-
-  // modal: document.querySelector('[data-modal]'),
+  showPreviousBtn: document.querySelector('.prev-slide'),
+  showNextBtn: document.querySelector('.next-slide'),
 };
 
 refs.showPreviousBtn.addEventListener('click', minusSlide);
 refs.showNextBtn.addEventListener('click', plusSlide);
 
 function aroundReviews(n) {
-    console.log(n)
   if (slideIndex >= 1) {
     if (slideIndex <= quantityReviews) {
       return n;
@@ -141,51 +139,105 @@ function aroundReviews(n) {
   return quantityReviews;
 }
 
+function aroundReviewsPrev(n) {
+  if (slidePrev >= 1) {
+    if (slidePrev <= quantityReviews) {
+      return n;
+    }
+    slidePrev = 1;
+    return 1;
+  }
+  slidePrev = quantityReviews;
+  return quantityReviews;
+}
+
+function aroundReviewsNext(n) {
+  if (slideNext >= 1) {
+    if (slideNext <= quantityReviews) {
+      return n;
+    }
+    slideNext = 1;
+    return 1;
+  }
+  slideNext = quantityReviews;
+  return quantityReviews;
+}
+
 function minusSlide() {
-    const n = aroundReviews((slideIndex -= 1));
-  
-  showSlides(n);
+  const n = aroundReviews((slideIndex -= 1));
+  const prev = aroundReviewsPrev((slidePrev -= 1));
+  const next = aroundReviewsNext((slideNext -= 1));
+
+  showSlides(n, prev, next);
 }
 
 function plusSlide() {
-    const n = aroundReviews((slideIndex += 1));
-    showSlides(n);
+  const n = aroundReviews((slideIndex += 1));
+  const prev = aroundReviewsPrev((slidePrev += 1));
+  const next = aroundReviewsNext((slideNext += 1));
+  showSlides(n, prev, next);
 }
 
 // function currentSlide(n) {
 //     showSlides(slideIndex = n);
 // }
 
-function showSlides(n) {
-    const ind = n - 1;
-    let nPrev = aroundReviews(ind - 1);
-    const nNext = aroundReviews(ind + 1);
-console.log(nPrev, n, nNext)
-    document.getElementById('view_count').innerHTML = slideIndex + ' / ' + quantityReviews;
-    document.getElementById('reviews_article').innerHTML = reviews[ind][4];
-    document.getElementById('name_curr').innerHTML = reviews[ind][0];
-    
-    document.getElementById('name_prev').innerHTML = reviews[nPrev][0];
-    document.getElementById('name_next').innerHTML = reviews[nNext][0];
+function showSlides(n, prev, next) {
+  const ind = n - 1;
+  const nPrev = prev - 1;
+  const nNext = next - 1;
 
-    
-    let slidesPrev = document.getElementsByClassName("frame-prev");
-    let slidesCurr = document.getElementsByClassName("frame-current");
-    let slidesNext = document.getElementsByClassName("frame-next");
-    
-    for (i = 0; i < slidesPrev.length; i++) {
-        slidesPrev[i].style.display = "none";
-    }
-    slidesPrev[nPrev].style.display = "block";
+  document.getElementById('view_count').innerHTML = slideIndex + ' / ' + quantityReviews;
+  document.getElementById('reviews_article').innerHTML = reviews[ind][4];
+  document.getElementById('name_curr').innerHTML = reviews[ind][0];
 
-    for (i = 0; i < slidesCurr.length; i++) {
-        slidesCurr[i].style.display = "none";
-    }
-    slidesCurr[ind].style.display = "inline-block";
+  document.getElementById('name_prev').innerHTML = reviews[nPrev][0];
+  document.getElementById('name_next').innerHTML = reviews[nNext][0];
 
-    for (i = 0; i < slidesNext.length; i++) {
-        slidesNext[i].style.display = "none";
+  let slidesPrev = document.getElementsByClassName('frame-prev');
+  let slidesCurr = document.getElementsByClassName('frame-current');
+  let slidesNext = document.getElementsByClassName('frame-next');
+
+  let ratePrev = document.getElementsByClassName('rate-previous');
+  let rateCurr = document.getElementsByClassName('rate-current');
+  let rateNext = document.getElementsByClassName('rate-next');
+
+  for (i = 0; i < ratePrev.length; i++) {
+    if (i > reviews[nPrev][3]) {
+      ratePrev[i].style.fill = 'none';
+    } else {
+      ratePrev[i].style.fill = '#ab816c';
     }
-    slidesNext[nNext].style.display = "block";
-    
+  }
+
+  for (i = 0; i < rateCurr.length; i++) {
+    if (i > reviews[ind][3]) {
+      rateCurr[i].style.fill = 'none';
+    } else {
+      rateCurr[i].style.fill = '#ab816c';
+    }
+  }
+
+  for (i = 0; i < rateNext.length; i++) {
+    if (i > reviews[nNext][3]) {
+      rateNext[i].style.fill = 'none';
+    } else {
+      rateNext[i].style.fill = '#ab816c';
+    }
+  }
+
+  for (i = 0; i < slidesPrev.length; i++) {
+    slidesPrev[i].style.display = 'none';
+  }
+  slidesPrev[nPrev].style.display = 'block';
+
+  for (i = 0; i < slidesCurr.length; i++) {
+    slidesCurr[i].style.display = 'none';
+  }
+  slidesCurr[ind].style.display = 'inline-block';
+
+  for (i = 0; i < slidesNext.length; i++) {
+    slidesNext[i].style.display = 'none';
+  }
+  slidesNext[nNext].style.display = 'block';
 }
