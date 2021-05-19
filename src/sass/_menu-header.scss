@@ -7,7 +7,7 @@
     display: block;
     position: absolute;
     top: 0;
-    right: 70px;
+    right: 76px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -116,8 +116,8 @@
 .menu__button {
   z-index: 30;
   position: absolute;
-  right: 0px;
-
+  right: 15px;
+  top: 15px;
   display: inline-flex;
   margin: 0;
   padding: 0;
@@ -127,7 +127,8 @@
   transition: fill var(--animation);
 
   @media screen and (min-width: 767px) {
-    top: 15px;
+    top: 26px;
+    right: 0;
   }
 
   @media screen and (min-width: 1280px) {
