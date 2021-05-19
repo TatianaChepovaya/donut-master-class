@@ -2,7 +2,13 @@
   <div class="container">
     <div class="registration__global-case">
       <h2 class="registration__title title">Registration</h2>
-      <form class="registration-form" data-aos="fade-up" data-aos-duration="3000">
+      <form
+        action="./php/form.php"
+        method="POST"
+        class="registration-form"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+      >
         <div class="registration-form__info-case">
           <p class="registration-form__time">May 23, 11:00 New York</p>
           <p class="registration-form__cost">$ 699</p>
@@ -13,7 +19,7 @@
             <input
               type="text"
               class="registration-form__input"
-              name="Login"
+              name="login"
               placeholder="Your name"
               required
               minlength="5"
