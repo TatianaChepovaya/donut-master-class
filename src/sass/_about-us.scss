@@ -82,12 +82,7 @@
   }
   .about-us__read-more:checked ~ .about-us__read-more-text {
     opacity: 1;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
-    line-height: 1.25;
-    color: var(--text-color);
     max-height: 999em;
   }
   .about-us__read-more ~ .read-more-trigger:before {
