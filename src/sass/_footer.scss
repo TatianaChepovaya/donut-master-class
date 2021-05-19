@@ -135,7 +135,7 @@
   top: 8px;
   width: 30px;
   height: 30px;
-  border: 1px solid rgb(131, 79, 79);
+  border: 2px solid rgb(131, 79, 79);
   background-color: white;
   border-radius: 50%;
   cursor: pointer;
@@ -145,5 +145,5 @@
 }
 
 .backdrop.is-hidden .modalmap {
-  transform: translate(-50%, -50%) scale(0.6);
+  transform: translate(-50%, -50%) scale(0.5);
 }

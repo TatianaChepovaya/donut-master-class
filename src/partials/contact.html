@@ -1,19 +1,20 @@
-<section id="contacts" class="contacts">
+<section id="contacts" class="contacts" data-aos="zoom-in">
   <div class="container">
     <h2 class="contacts__title title">Contact</h2>
     <p class="contacts__text">We will answer any question!</p>
     <div class="contacts-form__wrapper">
       <form class="contacts-form">
         <label class="contacts-form__field">
-          <input type="text" class="contacts-form__input" name="E-mail" placeholder="Email " />
+          <input type="email" class="contacts-form__input" name="email" required placeholder="Email " />
         </label>
         <label class="contacts-form__field">
-          <input
+          <textarea class="contacts-form__input comment" maxlength="120" name="feedback" rows="1" required placeholder="Type your question"></textarea>
+          <!-- <input
             type="text"
-            class="contacts-form__input"
+            class="contacts-form__input comment"
             name="type your question"
             placeholder="Type your question"
-          />
+          /> -->
         </label>
         <button class="contacts__button button" type="submit">Send</button>
       </form>

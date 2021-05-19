@@ -6,12 +6,16 @@ ul {
   margin: 0;
   padding: 0;
 }
+html {
+  overflow-x: hidden;
+}
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.22;
   color: var(--text-color);
+  overflow-x: hidden;
 }
 .container {
   width: 100%;

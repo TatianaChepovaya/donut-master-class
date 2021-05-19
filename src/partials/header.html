@@ -1,5 +1,89 @@
 <header class="header">
-  <include src="./partials/menu.html"></include>
+
+  <!-- menu -->
+  <div class="container header__container">
+    <picture class="header__donuts--tablet">
+      <source srcset="
+          ./images/tablet/eight-donuts-tablet.png 1x,
+          ./images/tablet/eight-donuts-tablet@2x.png 2x
+        " media="(min-width: 768px)" />
+      <img class="header__eightdonuts" src="./images/desktop/eight-donuts-desktop.png" alt="eight-donuts" />
+    </picture>
+  
+    <nav class="navigation">
+      <!-- logo -->
+      <a class="link navigation__logo" href="" data-aos="fade-down"
+     data-aos-duration="3000">
+        <svg class="icon-logo" >
+          <use class="" href="/images/logo/logo.svg#logo"></use>
+        </svg>
+       
+        </picture>
+        <!-- <picture>
+          <source srcset="/images/desktop/logo-desktop.png 1x, /images/desktop/logo-desktop@2x.png 2x" type="image/png"
+            media="(min-width: 1280px)" />
+          <source srcset="
+              /images/mobile/logo-mobile=tablet.png    1x,
+              /images/mobile/logo-mobile=tablet@2x.png 2x
+            " type="image/png" media="(max-width: 1279px)" />
+  
+          <img src="/images/mobile/logo-mobile=tablet.png" width="158" alt="Логотип" />
+        </picture> -->
+      </a>
+
+  
+      <ul class="navigation__list list">
+        <li class="navigation__item" data-aos="fade-up"
+     data-aos-duration="3000">
+          <a class="scroll-to navigation__link link" href="#about-us">About us</a>
+        </li>
+        <li class="navigation__item" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+          <a class="scroll-to navigation__link link" href="#program">Program</a>
+        </li>
+        <li class="navigation__item" data-aos="fade-up"
+     data-aos-duration="3000">
+          <a class="scroll-to navigation__link link" href="#reviews">Reviews</a>
+        </li>
+        <li class="navigation__item" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+          <a class="scroll-to navigation__link link" href="#contacts">Contacts</a>
+        </li>
+      </ul>
+  
+      <button class="menu__button" type="button" aria-expanded="false" data-menu-button>
+        <svg class="menu__icon" width="30" height="18" aria-label="Переключатель мобильного меню">
+          <use class="icon-menu" href="/images/sprite.svg#icon-menu"></use>
+          <use class="icon-menu-close" href="/images/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+    </nav>
+  
+    <div class="menu__container" data-menu>
+      <a class="link menu__logo" href="">
+        <svg class="menu__icon" width="190" height="85" aria-label="Переключатель мобильного меню">
+          <use class="icon-menu" href="/images/logo/logo.svg#logo"></use>
+        </svg>
+        <!-- <picture>
+          <source srcset="
+              /images/mobile/logo-menu-mobile=tablet.png 1x,
+              /images/mobile/logo-menu-mobile=tablet@2x.png 2x
+            " type="image/png" media="(max-width: 1279px)" />
+          <img src="/images/mobile/logo-menu-mobile=tablet.png" width="190" alt="Логотип" />
+        </picture> -->
+      </a>
+      <ul class="menu__list list">
+        <li class="menu__item"><a class="scroll-to menu__link link" href="#about-us">About us</a></li>
+        <li class="menu__item"><a class="scroll-to menu__link link" href="#program">Program</a></li>
+        <li class="menu__item"><a class="scroll-to menu__link link" href="#reviews">Reviews</a></li>
+        <li class="menu__item"><a class="scroll-to menu__link link" href="#contacts">Contacts</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- <include src="./partials/menu.html"></include> -->
 
   <div class="header__donuts">
     <img class="header__powder" src="./images/sugar.png" alt="" />
