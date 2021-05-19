@@ -3,7 +3,21 @@
     <h2 class="reviews__title title">Reviews</h2>
     <ul class="reviews__list slider list">
       <li class="reviews__item slider__previous">
-        <div class="reviews__frame" aria-label="photo"></div>
+        <div class="reviews__frame frame-prev" id="slide_previous1" aria-label="photo"></div>
+        <div class="reviews__frame frame-prev" id="slide_previous2" aria-label="photo"></div>
+        <div class="reviews__frame frame-prev" id="slide_previous3" aria-label="photo"></div>
+        <div class="reviews__frame frame-prev" id="slide_previous4" aria-label="photo"></div>
+        <div class="reviews__frame frame-prev" id="slide_previous5" aria-label="photo"></div>
+        <div class="reviews__frame frame-prev" id="slide_previous6" aria-label="photo"></div>
+        <div class="reviews__frame frame-prev" id="slide_previous7" aria-label="photo"></div>
+        <div class="reviews__frame frame-prev" id="slide_previous8" aria-label="photo"></div>
+        <div class="reviews__frame frame-prev" id="slide_previous9" aria-label="photo"></div>
+        <div class="reviews__frame frame-prev" id="slide_previous10" aria-label="photo"></div>
+        <div class="reviews__frame frame-prev" id="slide_previous11" aria-label="photo"></div>
+        <div class="reviews__frame frame-prev" id="slide_previous12" aria-label="photo"></div>
+        <div class="reviews__frame frame-prev" id="slide_previous13" aria-label="photo"></div>
+        <div class="reviews__frame frame-prev" id="slide_previous14" aria-label="photo"></div>
+        <div class="reviews__frame frame-prev" id="slide_previous15" aria-label="photo"></div>
         <ul class="reviews__rate rate list">
           <li class="rate__item">
             <svg class="rate__icon" width="24" height="24">
@@ -31,10 +45,24 @@
             </svg>
           </li>
         </ul>
-        <h3 class="reviews__name">John</h3>
+        <h3 class="reviews__name" id="name_prev">John</h3>
       </li>
       <li class="reviews__item slider__current">
-        <div class="reviews__frame" aria-label="photo"></div>
+        <div class="reviews__frame frame-current" id="slide_current1" aria-label="photo"></div>
+        <div class="reviews__frame frame-current" id="slide_current2" aria-label="photo"></div>
+        <div class="reviews__frame frame-current" id="slide_current3" aria-label="photo"></div>
+        <div class="reviews__frame frame-current" id="slide_current4" aria-label="photo"></div>
+        <div class="reviews__frame frame-current" id="slide_current5" aria-label="photo"></div>
+        <div class="reviews__frame frame-current" id="slide_current6" aria-label="photo"></div>
+        <div class="reviews__frame frame-current" id="slide_current7" aria-label="photo"></div>
+        <div class="reviews__frame frame-current" id="slide_current8" aria-label="photo"></div>
+        <div class="reviews__frame frame-current" id="slide_current9" aria-label="photo"></div>
+        <div class="reviews__frame frame-current" id="slide_current10" aria-label="photo"></div>
+        <div class="reviews__frame frame-current" id="slide_current11" aria-label="photo"></div>
+        <div class="reviews__frame frame-current" id="slide_current12" aria-label="photo"></div>
+        <div class="reviews__frame frame-current" id="slide_current13" aria-label="photo"></div>
+        <div class="reviews__frame frame-current" id="slide_current14" aria-label="photo"></div>
+        <div class="reviews__frame frame-current" id="slide_current15" aria-label="photo"></div>
         <ul class="reviews__rate rate list">
           <li class="rate__item">
             <svg class="rate__icon" width="24" height="24">
@@ -62,10 +90,24 @@
             </svg>
           </li>
         </ul>
-        <h3 class="reviews__name">Will</h3>
+        <h3 class="reviews__name" id="name_curr">Will</h3>
       </li>
       <li class="reviews__item slider__next">
-        <div class="reviews__frame" aria-label="photo"></div>
+        <div class="reviews__frame frame-next" id="slide_next1" aria-label="photo"></div>
+        <div class="reviews__frame frame-next" id="slide_next2" aria-label="photo"></div>
+        <div class="reviews__frame frame-next" id="slide_next3" aria-label="photo"></div>
+        <div class="reviews__frame frame-next" id="slide_next4" aria-label="photo"></div>
+        <div class="reviews__frame frame-next" id="slide_next5" aria-label="photo"></div>
+        <div class="reviews__frame frame-next" id="slide_next6" aria-label="photo"></div>
+        <div class="reviews__frame frame-next" id="slide_next7" aria-label="photo"></div>
+        <div class="reviews__frame frame-next" id="slide_next8" aria-label="photo"></div>
+        <div class="reviews__frame frame-next" id="slide_next9" aria-label="photo"></div>
+        <div class="reviews__frame frame-next" id="slide_next10" aria-label="photo"></div>
+        <div class="reviews__frame frame-next" id="slide_next11" aria-label="photo"></div>
+        <div class="reviews__frame frame-next" id="slide_next12" aria-label="photo"></div>
+        <div class="reviews__frame frame-next" id="slide_next13" aria-label="photo"></div>
+        <div class="reviews__frame frame-next" id="slide_next14" aria-label="photo"></div>
+        <div class="reviews__frame frame-next" id="slide_next14" aria-label="photo"></div>
         <ul class="reviews__rate rate list">
           <li class="rate__item">
             <svg class="rate__icon" width="24" height="24">
@@ -93,27 +135,29 @@
             </svg>
           </li>
         </ul>
-        <h3 class="reviews__name">Elisabeth</h3>
+        <h3 class="reviews__name" id="name_next">Elisabeth</h3>
       </li>
     </ul>
 
     <article class="reviews__article">
-      <p>
+      <h3 class="text-hidden">feedback description</h3>
+      <p id="reviews_article">
         Last time I have visited a cooking course by Eva I was impressed with the way she explained
         everything to people. You can be sure you will manage to cook a delicious dish even if it is
         your first time in the kitchen! Thank you so much for the masterclass! Looking forward to
         the next one and highly recommend it to everyone!
       </p>
     </article>
-
+    
     <div class="reviews__pagination pagination">
-      <a class="pagination__button" aria-label="foreground slide">
+      
+      <a class="pagination__button prev-slide" aria-label="next slide">
         <p class="button-line"></p>
       </a>
 
-      <p class="pagination__count">2/15</p>
+      <p class="pagination__count" id="view_count">2/15</p>
 
-      <a class="pagination__button" aria-label="next slide">
+      <a class="pagination__button next-slide" aria-label="next slide">
         <p class="button-line"></p>
       </a>
     </div>
