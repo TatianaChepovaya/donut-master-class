@@ -1,3 +1,14 @@
+.text-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 .reviews {
   @media screen and (max-width: 767px) {
     text-align: center;
@@ -47,11 +58,11 @@
 
 .rate__icon {
   fill: var(--secondary-color);
+  stroke: var(--secondary-color);
 }
 
 .rate--false {
   fill: none;
-  stroke: var(--secondary-color);
 }
 
 @media screen and (max-width: 767px) {
@@ -64,6 +75,10 @@
 .reviews__article {
   margin-bottom: 25px;
   text-align: center;
+  height: 105px;
+  @media screen and (max-width: 768px) {
+    height: 231px;
+  }
 }
 
 .pagination__button {
@@ -165,16 +180,15 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
-
+  
   .slider__previous .reviews__frame {
     width: 136px;
     height: 136px;
-    background-image: url('../images/desktop/photo-john-desktop.jpg');
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/desktop/photo-john-desktop@2x.jpg');
-    }
+    
+
     background-repeat: no-repeat;
     background-size: contain;
+    display: none;
   }
 
   .slider__next .reviews__frame {
@@ -208,3 +222,92 @@
     align-items: center;
   }
 }
+
+#slide_previous1,
+#slide_current1,
+#slide_next1{
+  background-image: url('../images/desktop/photo-will-desktop.jpg');
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/desktop/photo-will-desktop@2x.jpg');
+  }
+}
+
+#slide_previous2,
+#slide_current2,
+#slide_next2 {
+  background-image: url('../images/desktop/photo-john-desktop.jpg');
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/desktop/photo-john-desktop@2x.jpg');
+  }
+}
+
+#slide_previous3,
+#slide_current3,
+#slide_next3 {
+  background-image: url('../images/desktop/photo-elisabeth-desktop.jpg');
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/desktop/photo-elisabeth-desktop@2x.jpg');
+  }
+}
+#slide_previous4,
+#slide_current4,
+#slide_next4 {
+  background-image: url('../images/photo/photo4.jpg');
+}
+#slide_previous5,
+#slide_current5,
+#slide_next5 {
+  background-image: url('../images/photo/photo5.jpg');
+}
+#slide_previous6,
+#slide_current6,
+#slide_next6 {
+  background-image: url('../images/photo/photo6.jpg');
+}
+#slide_previous7,
+#slide_current7,
+#slide_next7 {
+  background-image: url('../images/photo/photo7.jpg');
+}
+#slide_previous8,
+#slide_current8,
+#slide_next8 {
+  background-image: url('../images/photo/photo8.jpg');
+}
+#slide_previous9,
+#slide_current9,
+#slide_next9 {
+  background-image: url('../images/photo/photo9.jpg');
+}
+#slide_previous10,
+#slide_current10,
+#slide_next10 {
+  background-image: url('../images/photo/photo10.jpg');
+}
+#slide_previous11,
+#slide_current11,
+#slide_next11 {
+  background-image: url('../images/photo/photo11.jpg');
+}
+#slide_previous12,
+#slide_current12,
+#slide_next12 {
+  background-image: url('../images/photo/photo12.jpg');
+}
+#slide_previous13,
+#slide_current13,
+#slide_next13 {
+  background-image: url('../images/photo/photo13.jpg');
+}
+#slide_previous14,
+#slide_current14,
+#slide_next14 {
+  background-image: url('../images/photo/photo14.jpg');
+}
+#slide_previous15,
+#slide_current15,
+#slide_next15 {
+  background-image: url('../images/photo/photo15.jpg');
+}
+
+
