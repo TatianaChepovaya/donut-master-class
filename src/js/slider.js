@@ -121,11 +121,15 @@ showSlides(slideIndex, slidePrev, slideNext);
 
 const refs = {
   showPreviousBtn: document.querySelector('.prev-slide'),
+  showPreviousFrame: document.querySelector('.prev-slide-frame'),
   showNextBtn: document.querySelector('.next-slide'),
+  showNextFrame: document.querySelector('.next-slide-frame'),
 };
 
 refs.showPreviousBtn.addEventListener('click', minusSlide);
+refs.showPreviousFrame.addEventListener('click', minusSlide);
 refs.showNextBtn.addEventListener('click', plusSlide);
+refs.showNextFrame.addEventListener('click', plusSlide);
 
 function aroundReviews(n) {
   if (slideIndex >= 1) {
@@ -186,7 +190,7 @@ function showSlides(n, prev, next) {
   const ind = n - 1;
   const nPrev = prev - 1;
   const nNext = next - 1;
-
+  
   document.getElementById('view_count').innerHTML = slideIndex + ' / ' + quantityReviews;
   document.getElementById('reviews_article').innerHTML = reviews[ind][4];
   document.getElementById('name_curr').innerHTML = reviews[ind][0];
