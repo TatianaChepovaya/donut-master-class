@@ -11,30 +11,34 @@
           <p class="registration-form__descr">Apply your personal info for registration</p>
           <label class="registration-form__label">
             <input
-              type="text"
               class="registration-form__input"
-              name="Login"
+              type="text"
+              name="name"
               placeholder="Your name"
               required
               minlength="5"
+              maxlength="20"
               autocomplete="on"
             />
           </label>
           <label class="registration-form__label">
             <input
-              type="tel"
               class="registration-form__input"
-              name="phone_number"
+              type="tel"
+              name="tel"
               placeholder="Phone number"
               required
+              maxlength="20"
               autocomplete="on"
             />
           </label>
           <label class="registration-form__label">
             <input
-              type="email"
               class="registration-form__input"
+              type="email"
               name="email"
+              required
+              maxlength="20"
               placeholder="Email"
               autocomplete="on"
             />
@@ -99,3 +103,14 @@
     width="130"
   />
 </picture>
+<input id="phone1" type="text">
+<div class="form-group">
+  <label for="phone">Телефон: </label>
+  <select id="country" class="form-control">
+      <option value="ru"><img src="">Россия +7</option>
+      <option value="ua">Украина +380</option>
+      <option value="by">Белоруссия +375</option>
+  </select>
+  <input id="phone" type="text" class="form-control">
+</div>
+<script></script>
