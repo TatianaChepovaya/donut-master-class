@@ -74,12 +74,36 @@
   }
 
   &__input {
+    // color: var(--ph-color);
+    margin-bottom: 25px;
+    font-size: 16px;
+    width: 100%;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid var(--secondary-color);
+    transition: border-bottom var(--animation);
+    outline: none;
+  }
+
+  &__input:not(:placeholder-shown):required:valid {
     margin-bottom: 25px;
     width: 100%;
     border-left: none;
     border-top: none;
     border-right: none;
     border-bottom: 1px solid var(--secondary-color);
+    transition: border-bottom var(--animation);
+    outline: none;
+  }
+
+  &__input:not(:placeholder-shown):required:invalid {
+    margin-bottom: 25px;
+    width: 100%;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid red;
     transition: border-bottom var(--animation);
     outline: none;
   }
