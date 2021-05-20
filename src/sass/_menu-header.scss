@@ -83,6 +83,7 @@
 // menu__button
 .menu__container {
   z-index: 20;
+  display: none;
   text-align: center;
   position: fixed;
   top: -100%;
@@ -116,7 +117,7 @@
 }
 
 .menu__button {
-  z-index: 30;
+  z-index: 9;
   position: absolute;
   right: 15px;
   top: 15px;
@@ -125,7 +126,6 @@
   padding: 0;
   border: none;
   background: inherit;
-  cursor: pointer;
   transition: fill var(--animation);
 
   @media screen and (min-width: 767px) {

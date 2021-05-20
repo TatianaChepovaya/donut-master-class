@@ -3,8 +3,6 @@
     <div class="registration__global-case">
       <h2 class="registration__title title">Registration</h2>
       <form
-        action="./php/form.php"
-        method="POST"
         class="registration-form"
         data-aos="fade-up"
         data-aos-duration="3000"
@@ -23,8 +21,9 @@
               placeholder="Your name"
               autocomplete="on"
               required
-              minlength="5"
+              minlength="2"
               maxlength="20"
+              id="name-form"
             />
           </label>
           <label class="registration-form__label">
@@ -49,6 +48,7 @@
               autocomplete="on"
               required
               maxlength="20"
+              id="email-form"
             />
           </label>
         </div>
