@@ -75,28 +75,33 @@
   &:hover,
   &:focus {
     color: var(--hover-focus-color);
-    transition: var(--animation);
+    transition: color var(--animation);
   }
 }
 
 // menu__button
 .menu__container {
   z-index: 20;
-  display: none;
   text-align: center;
   position: fixed;
-  top: 0;
+  top: -100%;
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding-top: 25px;
-
+  padding: 25px;
+  opacity: 0;
   background-color: rgba(254, 243, 228, 0.9);
   backdrop-filter: blur(2px);
+  transition: opacity var(--animation), top var(--animation);
 
   &.is-open {
     background-attachment: fixed;
-    display: block;
+    top: 0;
+    opacity: 1;
+
+    @media screen and (max-height: 767px) {
+      overflow-y: overlay;
+    }
 
     @media screen and (min-width: 1280px) {
       display: none;
