@@ -160,7 +160,11 @@
 
 .menu__item {
   &:not(:last-child) {
-    padding-bottom: 5px;
+    margin-bottom: 5px;
+  }
+
+  &:last-child {
+    margin-bottom: 40px;
   }
 }
 
