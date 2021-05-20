@@ -161,9 +161,9 @@
   &:not(:last-child) {
     margin-bottom: 5px;
   }
-  &:last-child {
-    padding-bottom: 60px;
-  }
+}
+.menu__list {
+  padding-bottom: 40px;
 }
 
 .menu__link {
@@ -236,9 +236,7 @@
 }
 
 .navigation__link--swing:hover,
-.navigation__link--swing:focus,
-.menu__link--swing:hover,
-.menu__link--swing:focus {
+.navigation__link--swing:focus {
   -webkit-animation: swing 0.6s ease;
   animation: swing 0.6s ease;
   -webkit-animation-iteration-count: 1;
