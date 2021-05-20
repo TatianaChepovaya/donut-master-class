@@ -3,19 +3,18 @@ body {
     background-image: url('../images/bg/bg-up-mobile.svg'), url('../images/bg/bg-down-mobile.svg');
     background-repeat: no-repeat;
     background-position: top, bottom 260px center;
-    background-size: 100% 490px, 100% 1260px;
+    background-size: 100% 490px, 100% 1240px;
   }
   @media screen and (min-width: 768px) {
     background-image: url('../images/bg/bg-up-tablet.svg'), url('../images/bg/bg-down-tablet.svg');
     background-repeat: no-repeat;
     background-position: top, bottom 70px center;
-    background-size: 100% 657px, 100% 1380px;
+    background-size: 100% 657px, 100% 1370px;
   }
   @media screen and (min-width: 1279px) {
     background-image: url('../images/bg/bg-up-desktop.svg'), url('../images/bg/bg-down-desktop.svg');
     background-repeat: no-repeat;
     background-position: top, bottom;
-    background-size: 100% 1090px, 100% 1630px;
+    background-size: 100% 1040px, 100% 1600px;
   }
 }
-

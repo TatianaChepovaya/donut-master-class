@@ -47,6 +47,7 @@
     justify-content: flex-start;
     position: absolute;
     left: 0;
+    margin-top: 60px;
   }
 }
 .hero__info {
@@ -119,7 +120,7 @@
 .hero__socials {
   margin-top: 45px;
 
-  @media screen and (min-width: 768px) and(max-width:1279px) {
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
     margin-top: 31px;
   }
   @media screen and (min-width: 1280px) {

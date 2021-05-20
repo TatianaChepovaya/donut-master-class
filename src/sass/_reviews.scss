@@ -10,7 +10,7 @@
 }
 
 .reviews {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     text-align: center;
     padding-top: 25px;
   }
@@ -65,7 +65,7 @@
   fill: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .slider__previous,
   .slider__next {
     display: none;
@@ -75,9 +75,9 @@
 .reviews__article {
   margin-bottom: 25px;
   text-align: center;
-  height: 105px;
-  @media screen and (max-width: 768px) {
-    height: 231px;
+  height: 220px;
+  @media screen and (min-width: 768px) {
+    height: 100px;
   }
 }
 
@@ -89,14 +89,12 @@
   transition-property: background-image;
   transition-duration: 700ms;
   transition-timing-function: linear;
-  }
+}
 
 .pagination__button:hover,
 .pagination__button:focus {
-  background-image: linear-gradient(rgba(0,0,0,.04), rgba(0,0,0,.14));
-  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.14));
 }
-
 
 .button-line {
   width: 35px;
@@ -122,7 +120,8 @@
 
 .frame-prev:hover,
 .frame-next:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: url('../images/material-donut-pointer.png'), auto;
 }
 
@@ -132,14 +131,14 @@
 }
 @keyframes fade {
   from {
-      opacity: .4
+    opacity: 0.4;
   }
   to {
-      opacity: 1
+    opacity: 1;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
   .reviews__title {
     margin-bottom: 14px;
   }
@@ -156,7 +155,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
   .reviews__title {
     margin-bottom: 10px;
   }
@@ -346,4 +345,3 @@
 #slide_next15 {
   background-image: url('../images/photo/photo15.jpg');
 }
-

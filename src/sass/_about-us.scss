@@ -3,7 +3,7 @@
     padding-top: 80px;
   }
   @media screen and (min-width: 1280px) {
-    padding-top: 190px;
+    padding-top: 150px;
   }
 }
 .about-us__container {
@@ -73,7 +73,7 @@
 .about-us__read-more {
   display: none;
 }
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1279.98px) {
   .about-us__read-more-text {
     opacity: 0;
     max-height: 0;

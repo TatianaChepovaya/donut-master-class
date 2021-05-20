@@ -34,7 +34,7 @@
 .navigation__logo {
   display: inline-block;
   transition: var(--animation);
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     margin-left: auto;
     margin-right: auto;
   }
@@ -53,7 +53,7 @@
   display: flex;
   margin-left: 38px;
 
-  @media screen and (max-width: 1279px) {
+  @media screen and (max-width: 1279.98px) {
     display: none;
   }
 }
