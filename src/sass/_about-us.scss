@@ -78,7 +78,7 @@
     opacity: 0;
     max-height: 0;
     font-size: 0;
-    transition: 0.25s ease;
+    transition: 0.3s ease;
   }
   .about-us__read-more:checked ~ .about-us__read-more-text {
     opacity: 1;
