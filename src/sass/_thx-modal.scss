@@ -1,0 +1,319 @@
+.callback-form-input-error {
+  color: red;
+}
+
+.thx-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: rgba(254, 243, 228, 0.9);
+  // visibility: visible;
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 10;
+  pointer-events: none;
+
+  &.modal-active {
+    opacity: 1;
+    pointer-events: visible;
+  }
+}
+
+.thx-modal.modal-active .thx-modal__form {
+  width: 90vw;
+  height: 55vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 10;
+  text-align: center;
+  pointer-events: auto;
+  background-image: url('../images/bg-modal.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10%;
+
+  @media screen and (max-width: 767px) {
+    max-width: 400px;
+    max-height: 320px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 700px;
+    max-height: 460px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 800px;
+    height: 500px;
+  }
+}
+
+.thx-modal__title {
+  display: inline-flex;
+  color: var(--accent-color);
+  font-family: Caveat Brush;
+  font-size: 30px;
+  line-height: 1.2;
+  justify-content: center;
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.thx-modal__text {
+  font-size: 18px;
+  padding-bottom: 20px;
+  color: var(--primary-white-color);
+}
+
+.thx-modal__text--accent {
+  font-size: 20px;
+  line-height: 1.3;
+  color: var(--accent-color);
+  text-decoration: underline;
+  font-family: 'Caveat Brush', sans-serif;
+}
+
+// tablet
+@media screen and (min-width: 768px) {
+  .thx-modal__title {
+    font-size: 40px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+
+  .thx-modal__text {
+    font-size: 18px;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 30px;
+  }
+
+  .thx-modal__text--accent {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .thx-modal__title {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  .thx-modal__text {
+    padding-left: 170px;
+    padding-right: 170px;
+    padding-bottom: 30px;
+  }
+}
+
+// button
+.btn-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.thx-button {
+  width: 60px;
+  height: 60px;
+  font-family: 'Caveat Brush', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: var(--accent-color);
+  background: linear-gradient(90deg, var(--secondary-color) 0%, var(--ph-color) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(170, 115, 70, 0.438);
+  transition: all 0.3s ease-in-out 0s;
+  outline: none;
+  position: relative;
+  padding: 10px;
+}
+
+.thx-button::before {
+  content: '';
+  border-radius: 200px;
+  min-width: calc(70px + 12px);
+  min-height: calc(70px + 12px);
+  border: 6px solid var(--ph-color);
+  box-shadow: 0 0 60px rgba(83, 48, 28, 0.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.thx-button:hover,
+.thx-button:focus {
+  color: var(--accent-color);
+  transform: translateY(-6px);
+}
+
+.thx-button:hover::before,
+.thx-button:focus::before {
+  opacity: 1;
+}
+
+.thx-button::after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 6px solid var(--ph-color);
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+.thx-button:hover::after,
+.thx-button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 150px;
+    height: 150px;
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .thx-button {
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+  }
+
+  .thx-button::before {
+    content: '';
+    border-radius: 250px;
+    min-width: calc(90px + 12px);
+    min-height: calc(90px + 12px);
+  }
+
+  .thx-button::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+  }
+
+  @keyframes ring {
+    0% {
+      width: 45px;
+      height: 45px;
+      opacity: 1;
+    }
+    100% {
+      width: 180px;
+      height: 180px;
+      opacity: 0;
+    }
+  }
+}
+
+// animation
+.thx-modal--confetti {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 50%;
+  background-color: #f2d74e;
+  animation: confetti 5s ease-in-out -2s infinite;
+  transform-origin: left top;
+  z-index: 11;
+}
+
+.thx-modal--confetti:nth-child(1) {
+  background-color: #f2d74e;
+  left: 10%;
+  animation-delay: 0;
+}
+.thx-modal--confetti:nth-child(2) {
+  background-color: #95c3de;
+  left: 20%;
+  animation-delay: -5s;
+}
+.thx-modal--confetti:nth-child(3) {
+  background-color: #ff9a91;
+  left: 30%;
+  animation-delay: -3s;
+}
+.thx-modal--confetti:nth-child(4) {
+  background-color: #f2d74e;
+  left: 40%;
+  animation-delay: -2.5s;
+}
+.thx-modal--confetti:nth-child(5) {
+  background-color: #95c3de;
+  left: 50%;
+  animation-delay: -4s;
+}
+.thx-modal--confetti:nth-child(6) {
+  background-color: #ff9a91;
+  left: 60%;
+  animation-delay: -6s;
+}
+.thx-modal--confetti:nth-child(7) {
+  background-color: #f2d74e;
+  left: 70%;
+  animation-delay: -1.5s;
+}
+.thx-modal--confetti:nth-child(8) {
+  background-color: #95c3de;
+  left: 80%;
+  animation-delay: -2s;
+}
+.thx-modal--confetti:nth-child(9) {
+  background-color: #ff9a91;
+  left: 90%;
+  animation-delay: -3.5s;
+}
+.thx-modal--confetti:nth-child(10) {
+  background-color: #f2d74e;
+  left: 100%;
+  animation-delay: -2.5s;
+}
+
+@keyframes confetti {
+  0% {
+    transform: rotateZ(15deg) rotateY(0deg) translate(0, 0);
+  }
+  25% {
+    transform: rotateZ(5deg) rotateY(360deg) translate(-5vw, 20vh);
+  }
+  50% {
+    transform: rotateZ(15deg) rotateY(720deg) translate(5vw, 60vh);
+  }
+  75% {
+    transform: rotateZ(5deg) rotateY(1080deg) translate(-10vw, 80vh);
+  }
+  100% {
+    transform: rotateZ(15deg) rotateY(1440deg) translate(10vw, 110vh);
+  }
+}

@@ -15,7 +15,7 @@ $('.menu__button').removeClass("is-open");
 });
 
 $(document).ready(function () {
-  $('.menu__button').click(function (event) {
-    $('body').toggleClass('lock');
+  $('.btn-wrap').click(function (event) {
+    $('.thx-modal').removeClass('modal-active');
   });
 });
