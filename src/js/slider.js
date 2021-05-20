@@ -6,6 +6,13 @@
 //  4 - статья
 const reviews = [
   [
+    'John',
+    '../images/desktop/photo-john-desktop.jpg',
+    '../images/desktop/photo-john-desktop@2.jpg',
+    4,
+    'Review collection is not rocket science. After all, all we do is help you collect video, photo & text reviews from your customers. We then display these reviews on Your Site, on Google and on your Social By displaying genuine reviews most of our clients see an uplift in conversion within a few weeks. ',
+  ],
+  [
     'Will',
     '../images/desktop/photo-will-desktop.jpg',
     '../images/desktop/photo-will-desktop@2x.jpg',
@@ -13,39 +20,32 @@ const reviews = [
     'Last time I have visited a cooking course by Eva I was impressed with the way she explained everything to people. You can be sure you will manage to cook a delicious dish even if it is your first time in the kitchen! Thank you so much for the masterclass! Looking forward to the next one and highly recommend it to everyone!',
   ],
   [
-    'John',
-    '../images/desktop/photo-john-desktop.jpg',
-    '../images/desktop/photo-john-desktop@2.jpg',
-    4,
-    'Review collection is not rocket science. After all, all we do is help you collect video, photo & text reviews from your customers. We then display these reviews on Your Site, on Google and on your Social ',
-  ],
-  [
     'Elisabeth',
     '../images/desktop/photo-elisabeth-desktop.jpg',
     '../images/desktop/photo-elisabeth-desktop@2.jpg',
-    3,
-    'By displaying genuine reviews most of our clients see an uplift in conversion within a few weeks.',
+    5,
+    'By displaying genuine reviews most of our clients see an uplift in conversion within a few weeks. Review collection is not rocket science. After all, all we do is help you collect video, photo & text reviews from your customers.',
   ],
   [
     'Amanda',
     '/photo-elisabeth-desktop@2x.c6dcf501.jpg',
     '',
-    5,
-    'Last year we launched four new features including, SMS collection, video reviews, social proof & influencer.',
+    3,
+    "Last year we launched four new features including, SMS collection, video reviews, social proof & influencer. By displaying genuine reviews most of our clients see an uplift in conversion within Well, it's completely different from the innerspring mattress in the guest room at Grandma's, I'll tell you that much. It's a new concept",
   ],
   [
     'Michael',
     '../images/photo/photo5',
     '',
     5,
-    'For today’s customers, trust is king. That’s why we go further to help you collect genuine reviews. Driving down CPC, while boosting click-through response. ',
+    'For today’s customers, trust is king. That’s why we go further to help you collect genuine reviews. Driving down CPC, while boosting click-through response.By displaying genuine reviews most of our clients see an uplift in conversion within  ',
   ],
   [
     'Emma',
     '../images/photo/photo6',
     '',
     1,
-    'Trustpilot is free and open to every company and consumer everywhere. Sharing your experiences helps others make better choices and companies up their game.',
+    'Trustpilot is free and open to every company and consumer everywhere. Sharing your experiences helps others make better choices and companies up their game. By displaying genuine reviews most of our clients see an uplift in conversion within',
   ],
   [
     'Charlotte',
@@ -59,7 +59,7 @@ const reviews = [
     '../images/photo/photo8',
     '',
     3,
-    "Well, it's completely different from the innerspring mattress in the guest room at Grandma's, I'll tell you that much. Its a new concept for a bed that I think ended up working in the company's favor. ",
+    "Well, it's completely different from the innerspring mattress in the guest room at Grandma's, I'll tell you that much. Its a new concept for a bed that I think ended up working in the company's favor. By displaying genuine reviews most of our clients see an uplift in conversion within",
   ],
   [
     'Mason',
@@ -73,7 +73,7 @@ const reviews = [
     '../images/photo/photo10',
     '',
     4,
-    "Well, it's completely different from the innerspring mattress in the guest room at Grandma's, I'll tell you that much. It's a new concept for a bed that I think ended up working in the company's favor.",
+    "Well, it's completely different from the innerspring mattress in the guest room at Grandma's, I'll tell you that much. It's a new concept for a bed that I think ended up working in the company's favor. By displaying genuine reviews most of our clients see an uplift in conversion within",
   ],
   [
     'Abigail',
@@ -87,7 +87,7 @@ const reviews = [
     '../images/photo/photo12',
     '',
     4,
-    "If you're curious about the Purple Hybrid but you aren't willing to explore unconventional ways of bedding, you might want to look elsewhere.",
+    "If you're curious about the Purple Hybrid but you aren't willing to explore unconventional ways of bedding, you might want to look elsewhere. Well, it's completely different from the innerspring mattress in the guest room at Grandma's, I'll tell you that much. It's a new concept",
   ],
   [
     'Ava',
@@ -101,14 +101,14 @@ const reviews = [
     '../images/photo/photo14',
     '',
     3,
-    "Motion isolation isn't usually an innerspring bed's forte, but with the pocketed coils and special material you find in the Purple Hybrid, it's a different story. ",
+    "Motion isolation isn't usually an innerspring bed's forte, but with the pocketed coils and special material you find in the Purple Hybrid, it's a different story. Well, it's completely different from the innerspring mattress in the guest room at Grandma's, I'll tell you that much. It's a new concept",
   ],
   [
     'Lora',
     '../images/photo/photo15',
     '',
     3,
-    "The other benefit of the Purple Grid besides bouncy comfort would have to be its temperature-regulating abilities. It's not designed with any fancy cooling material, but instead",
+    "The other benefit of the Purple Grid besides bouncy comfort would have to be its temperature-regulating abilities. It's not designed with any fancy cooling material, but instead On top is the Purple's cover, and just like the name implies, it's extra-stretchy",
   ],
 ];
 
@@ -121,11 +121,15 @@ showSlides(slideIndex, slidePrev, slideNext);
 
 const refs = {
   showPreviousBtn: document.querySelector('.prev-slide'),
+  showPreviousFrame: document.querySelector('.prev-slide-frame'),
   showNextBtn: document.querySelector('.next-slide'),
+  showNextFrame: document.querySelector('.next-slide-frame'),
 };
 
 refs.showPreviousBtn.addEventListener('click', minusSlide);
+refs.showPreviousFrame.addEventListener('click', minusSlide);
 refs.showNextBtn.addEventListener('click', plusSlide);
+refs.showNextFrame.addEventListener('click', plusSlide);
 
 function aroundReviews(n) {
   if (slideIndex >= 1) {
@@ -186,7 +190,7 @@ function showSlides(n, prev, next) {
   const ind = n - 1;
   const nPrev = prev - 1;
   const nNext = next - 1;
-
+  
   document.getElementById('view_count').innerHTML = slideIndex + ' / ' + quantityReviews;
   document.getElementById('reviews_article').innerHTML = reviews[ind][4];
   document.getElementById('name_curr').innerHTML = reviews[ind][0];
@@ -203,7 +207,7 @@ function showSlides(n, prev, next) {
   let rateNext = document.getElementsByClassName('rate-next');
 
   for (i = 0; i < ratePrev.length; i++) {
-    if (i > reviews[nPrev][3]) {
+    if (i > reviews[nPrev][3]-1) {
       ratePrev[i].style.fill = 'none';
     } else {
       ratePrev[i].style.fill = '#ab816c';
@@ -211,7 +215,7 @@ function showSlides(n, prev, next) {
   }
 
   for (i = 0; i < rateCurr.length; i++) {
-    if (i > reviews[ind][3]) {
+    if (i > reviews[ind][3]-1) {
       rateCurr[i].style.fill = 'none';
     } else {
       rateCurr[i].style.fill = '#ab816c';
@@ -219,7 +223,7 @@ function showSlides(n, prev, next) {
   }
 
   for (i = 0; i < rateNext.length; i++) {
-    if (i > reviews[nNext][3]) {
+    if (i > reviews[nNext][3]-1) {
       rateNext[i].style.fill = 'none';
     } else {
       rateNext[i].style.fill = '#ab816c';

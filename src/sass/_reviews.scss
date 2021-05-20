@@ -82,11 +82,21 @@
 }
 
 .pagination__button {
-  border: none;
-  background-color: inherit;
-  padding: 15px;
-  margin-top: 3px;
+  border-radius: 25px;
+  padding: 15px 25px;
+  margin-top: 4px;
+  text-align: center;
+  transition-property: background-image;
+  transition-duration: 700ms;
+  transition-timing-function: linear;
+  }
+
+.pagination__button:hover,
+.pagination__button:focus {
+  background-image: linear-gradient(rgba(0,0,0,.04), rgba(0,0,0,.14));
+  
 }
+
 
 .button-line {
   width: 35px;
@@ -96,9 +106,37 @@
 }
 
 .pagination__count {
-  padding: 10px 0;
+  text-align: center;
+  width: 75px;
+  padding: 10px;
   margin-bottom: 0;
   color: var(--secondary-color);
+}
+
+.frame-prev,
+.frame-next {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+}
+
+.frame-prev:hover,
+.frame-next:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: url('../images/material-donut-pointer.png'), auto;
+}
+
+.reviews__frame {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+      opacity: .4
+  }
+  to {
+      opacity: 1
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -180,11 +218,10 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
-  
+
   .slider__previous .reviews__frame {
     width: 136px;
     height: 136px;
-    
 
     background-repeat: no-repeat;
     background-size: contain;
@@ -225,19 +262,19 @@
 
 #slide_previous1,
 #slide_current1,
-#slide_next1{
-  background-image: url('../images/desktop/photo-will-desktop.jpg');
+#slide_next1 {
+  background-image: url('../images/desktop/photo-john-desktop.jpg');
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url('../images/desktop/photo-will-desktop@2x.jpg');
+    background-image: url('../images/desktop/photo-john-desktop@2x.jpg');
   }
 }
 
 #slide_previous2,
 #slide_current2,
 #slide_next2 {
-  background-image: url('../images/desktop/photo-john-desktop.jpg');
+  background-image: url('../images/desktop/photo-will-desktop.jpg');
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url('../images/desktop/photo-john-desktop@2x.jpg');
+    background-image: url('../images/desktop/photo-will-desktop@2x.jpg');
   }
 }
 
@@ -309,5 +346,4 @@
 #slide_next15 {
   background-image: url('../images/photo/photo15.jpg');
 }
-
 
