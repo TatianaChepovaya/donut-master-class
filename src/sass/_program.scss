@@ -30,8 +30,10 @@
   }
 }
 .program__item {
+  position: relative;
   font-size: 16px;
   margin-bottom: 10px;
+  padding-left: 40px;
 
   @media screen and (min-width: 1280px) {
     font-size: inherit;
@@ -46,8 +48,14 @@
     }
   }
   &::before {
-    content: '>';
-    margin-right: 7px;
+    content: '';
+    position: absolute;
+    margin-left: -40px;
+    width: 25px;
+    height: 25px;
+    background-image: url(/images/donuts_marker.png);
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
   }
 }
 .agenda__list {
