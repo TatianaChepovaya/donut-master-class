@@ -1,131 +1,21 @@
-.bg-container-up {
-  @media screen and (max-width: 360px) {
-    background-position: left bottom 630px;
-  }
-  @media screen and (min-width: 360px) and (max-width: 580px) {
-    background-position: left bottom 570px;
-  }
-  @media screen and (min-width: 580px) and (max-width: 900px) {
-    background-position: center -150px;
-  }
-  @media screen and (min-width: 850px) and (max-width: 1050px) {
-    background-position: center -250px;
-  }
-  @media screen and (min-width: 1050px) and (max-width: 1279px) {
-    background-position: center -350px;
-  }
-
-}
-
-.bg-container-down {
-  @media screen and (max-width: 360px) {
-    background-position: center 20px;
-  }
-  @media screen and (min-width: 360px) and (max-width: 420px) {
-    background-position: center 5px;
-  }
-  @media screen and (min-width: 420px) and (max-width: 768px) {
-    background-position: center -10px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1250px) {
-    background-image: url('../images/bg/bg-down-desktop.svg');
-    background-position: center;
+body {
+  @media screen and (min-width: 280px) {
+    background-image: url('../images/bg/bg-up-mobile.svg'), url('../images/bg/bg-down-mobile.svg');
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-position: top, bottom 260px center;
+    background-size: 100% 490px, 100% 1260px;
   }
-   @media screen and (min-width: 1250px) {
-    background-image: url('../images/bg/bg-down-big.svg');
-    background-position: center 5px;
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/bg/bg-up-tablet.svg'), url('../images/bg/bg-down-tablet.svg');
     background-repeat: no-repeat;
-    background-size: 100% auto;
-   }
-  
-}
-
-.bg-container-bottom {
-  @media screen and (max-width: 360px) {
-    background-position: left bottom 330px;
+    background-position: top, bottom 70px center;
+    background-size: 100% 657px, 100% 1380px;
   }
-  @media screen and (min-width: 360px) and (max-width: 540px) {
-    background-position: left bottom 230px;
-  }
-  @media screen and (min-width: 540px) and (max-width: 768px) {
-    background-position: left bottom 130px;
+  @media screen and (min-width: 1279px) {
+    background-image: url('../images/bg/bg-up-desktop.svg'), url('../images/bg/bg-down-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: top, bottom;
+    background-size: 100% 1090px, 100% 1630px;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .bg-container-up {
-    background-image: url('../images/bg/bg-up-mobile.svg');
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-  }
-
-  .bg-container-down {
-    background-image: url('../images/bg/bg-down-mobile.svg');
-    background-position: right top 25px;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-  }
-
-  .bg-container-bottom {
-    background-image: url('../images/bg/bg-down-mobile.svg');
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .bg-container-up {
-    background-image: url('../images/bg/bg-up-tablet.svg');
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-  }
-
-  .bg-container-down {
-    padding-top: 40px;
-    background-image: url('../images/bg/bg-down-tablet.svg');
-    background-position: right top;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-  }
-
-  // .bg-container-bottom {
-  //   background-image: url('../images/tablet/kisspng-party-confetti-tablet.png'),
-  //     url('../images/bg/bg-down-tablet.svg');
-  //   background-position: right bottom 290px, left bottom 100px;
-  //   background-repeat: no-repeat, no-repeat;
-  //   background-size: auto, 100% auto;
-  // }
-
-  .bg-container-bottom {
-    background-image: url('../images/bg/bg-down-tablet.svg');
-    background-position: left bottom 100px;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-  }
-}
-
-@media screen and (min-width: 1279px) {
-  .bg-container-up {
-    background-image: url('../images/bg/bg-up-desktop.svg');
-    background-position: left bottom 80px;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-  }
-
-  // .bg-container-bottom {
-  //   background-image: url('../images/desktop/kisspng-party-confetti-desktop.png'),
-  //     url('../images/bg/bg-down-desktop.svg');
-  //   background-position: right 50px bottom 290px, left bottom;
-  //   background-repeat: no-repeat, no-repeat;
-  //   background-size: auto, 100% auto;
-  // }
-
-  .bg-container-bottom {
-    background-image: url('../images/bg/bg-down-desktop.svg');
-    background-position: left bottom;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-  }
-}
