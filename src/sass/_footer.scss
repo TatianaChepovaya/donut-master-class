@@ -108,7 +108,12 @@
   @media screen and (max-width: 767.98px) {
     width: 85%;
     padding: 5px;
-    height: 85%;
+    height: 60%;
+  }
+  @media screen and (max-width: 1279.98px) {
+    width: 85%;
+    padding: 5px;
+    height: 80%;
   }
   background-color: var(--primary-white-color);
 
@@ -122,8 +127,9 @@
   font-size: 20px;
 }
 .modalmap__iframe {
-  @media screen and (max-width: 767.98px) {
+  @media screen and (max-width: 1278.98px) {
     width: 90%;
+    height: 80%;
     margin-left: 20px;
     margin-top: 20px;
   }
