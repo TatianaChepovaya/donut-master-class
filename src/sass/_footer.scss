@@ -70,14 +70,14 @@
 .footer__img {
   position: absolute;
   right: 0;
-  top: 0;
+  bottom: 0;
   z-index: 1;
-  @media screen and (max-width: 767.98px) {
-    top: 85px;
-  }
-  @media screen and (min-width: 1279px) {
-    top: -39px;
-  }
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .backdrop {
